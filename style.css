@@ -4,16 +4,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.712);
 }
-.main-content {
-    flex-grow: 1;
-    padding: 20px;
-    background-color: rgba(241, 240, 240, 0.808);
-    max-width: 600px;
-    position: relative;
-}
-
 #d-link a {
     color: #3691c9;
     text-decoration: none;
@@ -144,7 +136,8 @@ abbr {
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.699);
     background-color: whitesmoke;
     margin: auto;
-    padding: 20px;
+    padding: 13px;
+    margin-bottom: 20px;
 }
 .link-materiais {
     color: rgba(255, 136, 0, 0.5);
@@ -155,4 +148,16 @@ abbr {
 }
 .link-materiais:hover {
     color: rgb(255, 136, 0);
+}
+#imagem-secundaria {
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+    display: block;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.616);
+}
+.imagem-pequena-JVN {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
 }
