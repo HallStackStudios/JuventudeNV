@@ -161,3 +161,8 @@ abbr {
     height: 70px;
     border-radius: 50%;
 }
+.container {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.74);
+    margin-top: 90px;
+}
