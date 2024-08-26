@@ -4,7 +4,6 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-image: url('imagens/faiscas.png');
 }
 #d-link a {
     color: #3691c9;
@@ -92,6 +91,7 @@ abbr {
     transition: transform 1s ease, opacity 1s ease;
     opacity: 0;
     transform: translateY(-100%);
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.699);
 }
 #top-bar.visible2 {
     transform: translateY(0);
