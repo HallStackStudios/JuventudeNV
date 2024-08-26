@@ -4,6 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    background-image: url('imagens/faiscas.png');
 }
 #d-link a {
     color: #3691c9;
@@ -89,6 +90,8 @@ abbr {
     line-height: 60px; /* Centraliza o texto verticalmente */
     z-index: 1000; /* Garante que a barra fique acima de outros elementos */
     transition: transform 1s ease, opacity 1s ease;
+    opacity: 0;
+    transform: translateY(-100%);
 }
 #top-bar.visible2 {
     transform: translateY(0);
@@ -179,10 +182,6 @@ abbr {
 }
 .container {
     width: 100%;
-    background-image: url('imagens/fogo.png');
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: rgb(0, 0, 0);
 }
 .section {
@@ -210,4 +209,20 @@ footer {
 }
 #link-footer:hover {
     color: orangered;
+}
+.link-contatos {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+#link-contatos-gmail {
+    color: rgb(255, 71, 71);
+}
+#link-contatos-gmail:hover {
+    color: rgba(255, 0, 0, 0.877);
+}
+#link-contatos-what {
+    color: rgb(0, 179, 0);
+}
+#link-contatos-what:hover {
+    color: green;
 }
