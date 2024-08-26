@@ -167,7 +167,7 @@ abbr {
     border-radius: 50%;
 }
 .container-cor {
-    background-image: url('imagens/faiscas.png');
+    background-image: url('imagens/fogo.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -185,21 +185,6 @@ abbr {
     border-radius: 15px;
     margin-top: 25px;
     margin-bottom: 25px;
-}
-.container {
-    width: 100%;
-    background-color: black;
-}
-.section {
-    color: black;
-    font-size: 17px;
-    padding: 15px;
-    width: 80%;
-    margin: auto;
-    border-radius: 15px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    background-color: rgba(255, 255, 255, 0.904);
 }
 footer {
     margin: auto;
@@ -232,4 +217,13 @@ footer {
 }
 #link-contatos-what:hover {
     color: green;
+}
+.link-lideranca {
+    text-decoration: none;
+    color: rgb(255, 230, 149);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.link-lideranca:hover {
+    color: rgb(255, 196, 0);
 }
