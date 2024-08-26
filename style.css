@@ -191,7 +191,7 @@ footer {
     text-align: center;
     color: black;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.836);
 }
 #link-footer {
     color: black;
