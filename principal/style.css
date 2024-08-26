@@ -188,10 +188,10 @@ abbr {
 }
 .container {
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: black;
 }
 .section {
-    color: whitesmoke;
+    color: black;
     font-size: 17px;
     padding: 15px;
     width: 80%;
@@ -199,22 +199,25 @@ abbr {
     border-radius: 15px;
     margin-top: 25px;
     margin-bottom: 25px;
-    background-color: rgba(0, 0, 0, 0.726);
+    background-color: rgba(255, 255, 255, 0.904);
 }
 footer {
     margin: auto;
     text-align: center;
-    color: whitesmoke;
+    color: black;
     width: 100%;
-    background-color: #0f0f0f;
+    background-color: whitesmoke;
+    background-image: url('imagens/faiscas.png');
+    background-position: center center;
 }
 #link-footer {
-    color: rgba(255, 88, 27, 0.753);
+    color: black;
     text-decoration: none;
     transition: all 0.3s ease;
+    font-weight: bold;
 }
 #link-footer:hover {
-    color: orangered;
+    color: rgb(255, 145, 0);
 }
 .link-contatos {
     text-decoration: none;
