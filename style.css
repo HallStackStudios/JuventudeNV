@@ -81,7 +81,7 @@ abbr {
 #top-bar {
     width: 100%;
     height: 90px; /* Ajuste a altura conforme necessário */
-    background-color: #ff833e;
+    background-color: #ffe77d;
     color: skyblue;
     font-weight: bold;
     position: absolute;
@@ -112,21 +112,20 @@ abbr {
     text-decoration: none;
     float: left;
 }
-
-.link-origin:hover {
-    color: rgb(255, 193, 58);
-    cursor: pointer;
-}
-
 .link-origin {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bold;
+    font-size: 21px;
     width: 0px;
     padding: 10px;
     height: 0px;
     border-radius: 20px;
     transition: all 0.4s ease-out;
+}
+.link-origin:hover {
+    color: rgba(29, 29, 29, 0.678);
+    cursor: pointer;
 }
 .container-materiais {
     width: 80%;
@@ -151,6 +150,9 @@ abbr {
 #imagem-secundaria {
     border-radius: 50%;
     float: left;
+    width: 70px;
+    padding: 0;
+    height: 0;
     margin: 10px;
     display: block;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.616);
@@ -200,7 +202,7 @@ footer {
     text-align: center;
     color: black;
     width: 100%;
-    background-color: rgb(245, 245, 245);
+    background-color: #E3DCC2;
 }
 #link-footer {
     color: rgba(255, 88, 27, 0.753);
