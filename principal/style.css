@@ -136,16 +136,20 @@ abbr {
     margin: auto;
     padding: 13px;
     margin-bottom: 20px;
+    transition: all 0.2s ease-in-out;
+}
+.container-materiais:hover {
+    background-color: rgb(255, 206, 116);
 }
 .link-materiais {
-    color: rgba(255, 136, 0, 0.5);
+    color: black;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
     transition: all 0.3s ease;
 }
 .link-materiais:hover {
-    color: rgb(255, 136, 0);
+    color: rgba(0, 0, 0, 0.644);
 }
 #imagem-secundaria {
     border-radius: 50%;
@@ -200,9 +204,9 @@ abbr {
 footer {
     margin: auto;
     text-align: center;
-    color: black;
+    color: whitesmoke;
     width: 100%;
-    background-color: #E3DCC2;
+    background-color: #0f0f0f;
 }
 #link-footer {
     color: rgba(255, 88, 27, 0.753);
