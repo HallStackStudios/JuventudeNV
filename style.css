@@ -151,7 +151,7 @@ abbr {
 .link-materiais:hover {
     color: rgba(0, 0, 0, 0.644);
 }
-#imagem-secundaria {
+#imagem-holl {
     border-radius: 50%;
     float: left;
     width: 70px;
@@ -227,3 +227,83 @@ footer {
 .link-lideranca:hover {
     color: rgb(255, 196, 0);
 }
+
+
+/*divisa*/
+
+
+
+.imagem-holl {
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    float: right;
+    margin-right: 30px;
+}
+@media screen and (max-width: 600px) {
+    .imagem-holl {
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+    }
+}
+/* Estilos do Menu Dropdown */
+.dropdown-menu {
+    display: block;
+    position: fixed;
+    top: 80px;
+    right: 5px;
+    background-color: rgba(68, 68, 68, 0.918);
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0;
+    border-radius: 10px;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+    visibility: hidden;
+}
+
+/* Links do Menu */
+.dropdown-menu a {
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover no link do menu */
+.dropdown-menu a:hover {
+    background-color: #858585;
+}
+
+/* Estilos do Ícone de Menu */
+#imagem-menu {
+    display: block;
+    float: left;
+    margin-top: 22.3%;
+    margin-left: 15%;
+    margin-right: 3%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Exibir o Menu Dropdown com Efeito */
+.imagem-holl:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* Estilos do Submenu */
+.dropdown-item {
+    position: relative;
+}
+
