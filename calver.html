@@ -5,6 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendario e Versículos</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: black;
+            background-image: url('imagens/faiscas2.png');
+        }
+        #caixa-calendario {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: whitesmoke;
+            width: 80%;
+            border-radius: 10px;
+            padding: 15px;
+            height: 100%;
+            margin: auto;
+            margin-top: 130px;
+            margin-bottom: 50px;
+        }
+        .break {
+            width: 100%;
+            height: 0;
+        }
+        .number {
+            display: block;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 100px;
+            width: 20px;
+            height: 20px;
+            transition: all 0.3s;
+            padding: 5px;
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .number:hover {
+            background-color: rgb(150, 150, 150);
+        }
+        .pass-right {
+            display: block;
+            font-weight: bolder;
+            font-size: 30px;
+            cursor: pointer;
+            background-color: rgb(150, 150, 150);
+            border-radius: 50%;
+            width: 35px;
+            padding: 1px;
+            text-align: center;
+            height: 35px;
+            margin-top: 15px;
+            margin-left: 5px;
+            transition: all 0.3s;
+        }
+        .pass-right:hover {
+            background-color: rgb(78, 78, 78);
+        }
+        .pass-left {
+            display: block;
+            font-weight: bolder;
+            font-size: 30px;
+            cursor: pointer;
+            background-color: rgb(150, 150, 150);
+            border-radius: 50%;
+            width: 35px;
+            padding: 1px;
+            text-align: center;
+            height: 35px;
+            margin-top: 15px;
+            margin-right: 5px;
+            transition: all 0.3s;
+        }
+        .pass-left:hover {
+            background-color: rgb(78, 78, 78);
+        }
+    </style>
 </head>
 <body>
     <div id="top-bar">
@@ -30,7 +105,45 @@
         </nav>
     </div>
 
-
+    <div id="caixa-calendario">
+        <h1>Calendário</h1>
+        <div class="break"></div>
+        <div class="pass-left">&lt;</div>
+        <h2>Janeiro</h2>
+        <div class="pass-right">&gt;</div>
+        <div class="break"></div>
+        <p class="number">1</p>
+        <p class="number">2</p>
+        <p class="number">3</p>
+        <p class="number">4</p>
+        <p class="number">5</p>
+        <p class="number">6</p>
+        <p class="number">7</p>
+        <p class="number">8</p>
+        <p class="number">9</p>
+        <p class="number">10</p>
+        <p class="number">11</p>
+        <p class="number">12</p>
+        <p class="number">13</p>
+        <p class="number">14</p>
+        <p class="number">15</p>
+        <p class="number">16</p>
+        <p class="number">17</p>
+        <p class="number">18</p>
+        <p class="number">19</p>
+        <p class="number">20</p>
+        <p class="number">21</p>
+        <p class="number">22</p>
+        <p class="number">23</p>
+        <p class="number">24</p>
+        <p class="number">25</p>
+        <p class="number">26</p>
+        <p class="number">27</p>
+        <p class="number">28</p>
+        <p class="number">29</p>
+        <p class="number">30</p>
+        <p class="number">31</p>
+    </div>
 
     <script>
         window.alert('PÁGINA AINDA EM CONSTRUÇÃO')  
