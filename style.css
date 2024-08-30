@@ -238,12 +238,26 @@ footer {
     float: right;
     margin-right: 30px;
 }
+.with {
+    display: none;
+    color: black;
+    float: left;
+    font-size: 20px;
+}
+@media screen and (max-width: 373px) {
+    .with {
+        font-size: 16px;
+    }
+}
 @media screen and (max-width: 600px) {
     .imagem-holl {
         display: block;
     }
     .nav-menu {
         display: none;
+    }
+    .with {
+        display: block;
     }
 }
 /* Estilos do Menu Dropdown */
@@ -252,12 +266,12 @@ footer {
     position: fixed;
     top: 80px;
     right: 5px;
-    background-color: rgba(68, 68, 68, 0.918);
+    background-color: whitesmoke;
     padding: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     opacity: 0;
-    border-radius: 10px;
+    border-radius: 5px;
     transform: translateY(-20px);
     transition: all 0.3s ease;
     visibility: hidden;
@@ -269,14 +283,15 @@ footer {
     text-decoration: none;
     display: block;
     border-radius: 5px;
-    color: whitesmoke;
+    color: black;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 /* Hover no link do menu */
 .dropdown-menu a:hover {
-    background-color: #858585;
+    background-color: #000000;
+    color: whitesmoke;
 }
 
 /* Estilos do Ícone de Menu */
