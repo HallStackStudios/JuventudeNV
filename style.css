@@ -164,7 +164,7 @@ abbr {
     border-radius: 50%;
 }
 .container-cor {
-    background-image: url('imagens/fogo.png');
+    background-image: url('imagens/fogo-pequeno.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -318,4 +318,58 @@ footer {
 .dropdown-item {
     position: relative;
 }
+.box-material {
+    width: 80%;
+    border-radius: 15px;
+    margin: auto;
+    padding: 13px;
+    transition: all 0.2s ease-in-out;
+}
+.div-imagem-material {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    transition: all 0.3s;
+}
+.imagem-material {
+    width: 100%;
+    height: 300px;
+    transition: all 0.3s;
+}
+@media screen and (max-width: 550px) {
+    .div-imagem-material {
+        height: 200px;
+    }
+    .imagem-material {
+        height: 200px;
+    }
+}
+.reflex-link-material {
+    display: block;
+    float: left;
+    color: black;
+    font-weight: bold;
+    border: 1.5px solid orange;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s;
+    background-color: whitesmoke;
+}
+.reflex-link-material:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+.letras {
+    color: whitesmoke;
+    padding: 10px;
+    border: 1.5px solid orange;
+    font-size: 28px;
+    background-color: black;
+    border-radius: 15px;
 
+}
