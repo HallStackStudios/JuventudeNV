@@ -8,12 +8,12 @@
     <link rel="shortcut icon" href="imagens/coracao.png" type="image/x-icon">
     <style>
         body {
-            background-color: black;
+            background-color: white;
         }
         #caixa-calendario {
             display: flex;
             flex-wrap: wrap;
-            background-color: whitesmoke;
+            background-color: black;
             width: 80%;
             border-radius: 10px;
             padding: 15px;
@@ -29,7 +29,7 @@
         .number {
             display: block;
             font-size: 20px;
-            font-weight: bold;
+            font-weight: normal;
             border-radius: 100px;
             width: 20px;
             height: 20px;
@@ -39,9 +39,11 @@
             margin-left: 10px;
             margin-right: 10px;
             cursor: pointer;
+            color: orange;
         }
         .number:hover {
-            background-color: rgb(150, 150, 150);
+            background-color: whitesmoke;
+            color: black;
         }
         .pass-right {
             display: block;
@@ -119,10 +121,10 @@
     </div>
 
     <div id="caixa-calendario">
-        <h1>Calendário 2024</h1>
+        <h1 style="color: whitesmoke;">Calendário 2024</h1>
         <div class="break"></div>
         <div class="pass-left">&lt;</div>
-        <h2>Janeiro</h2>
+        <h2 style="color: whitesmoke;">Janeiro</h2>
         <div class="pass-right">&gt;</div>
         <div class="break"></div>
         <p class="number">1</p>
