@@ -164,6 +164,13 @@
     const daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]; // Número de dias em cada mês
     let currentMonthIndex = 0;
 
+    // Objeto para armazenar eventos específicos para cada dia
+    const events = {
+        // AQUI PARA COLOCAR EVENTOS 
+        "Janeiro-1": "Ano Novo",
+        // Adicione mais eventos conforme necessário
+    };
+
     const monthDisplay = document.querySelector('#caixa-calendario h2');
     const daysContainer = document.querySelector('#caixa-calendario');
     const passLeft = document.querySelector('.pass-left');
@@ -202,6 +209,9 @@
     });
 
     function showInfoBox(day, month) {
+        const eventKey = `${month}-${day}`;
+        const eventInfo = events[eventKey] || "Nenhum evento para este dia."; // Pega o evento específico ou mostra mensagem padrão
+
         const infoBox = document.createElement('div');
         infoBox.className = 'info-box';
         infoBox.style.position = 'fixed';
@@ -215,7 +225,7 @@
 
         infoBox.innerHTML = `
             <h3>Informações para ${day} de ${month}</h3>
-            <p>Aqui vão as informações específicas do dia ${day} de ${month}.</p>
+            <p>${eventInfo}</p>
             <button id="close-info-box">Fechar</button>
         `;
 
@@ -228,17 +238,6 @@
 
     updateCalendar(); // Inicializa o calendário no mês atual
 });
-function isLeapYear(year) {
-    return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
-}
-
-function updateCalendar() {
-    const currentYear = new Date().getFullYear(); // Pode ser ajustado conforme o seu requisito
-    daysInMonth[1] = isLeapYear(currentYear) ? 29 : 28; // Atualiza fevereiro para 28 ou 29 dias
-
-    monthDisplay.textContent = monthNames[currentMonthIndex];
-    renderDays(daysInMonth[currentMonthIndex]);
-}
 
 window.alert('PÁGINA AINDA EM CONSTRUÇÃO') 
     </script>
