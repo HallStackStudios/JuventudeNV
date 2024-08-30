@@ -79,6 +79,18 @@
         .pass-left:hover {
             background-color: rgb(78, 78, 78);
         }
+        .info-box {
+        position: fixed;
+        background-color: white;
+        border: 1px solid black;
+        padding: 20px;
+        z-index: 1000;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
     </style>
 </head>
 <body>
@@ -107,7 +119,7 @@
     </div>
 
     <div id="caixa-calendario">
-        <h1>Calendário</h1>
+        <h1>Calendário 2024</h1>
         <div class="break"></div>
         <div class="pass-left">&lt;</div>
         <h2>Janeiro</h2>
@@ -146,8 +158,89 @@
         <p class="number">31</p>
     </div>
 
-    <script>
-        window.alert('PÁGINA AINDA EM CONSTRUÇÃO')  
+    <script> 
+        document.addEventListener('DOMContentLoaded', function() {
+    const monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+    const daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]; // Número de dias em cada mês
+    let currentMonthIndex = 0;
+
+    const monthDisplay = document.querySelector('#caixa-calendario h2');
+    const daysContainer = document.querySelector('#caixa-calendario');
+    const passLeft = document.querySelector('.pass-left');
+    const passRight = document.querySelector('.pass-right');
+
+    function updateCalendar() {
+        monthDisplay.textContent = monthNames[currentMonthIndex];
+        renderDays(daysInMonth[currentMonthIndex]);
+    }
+
+    function renderDays(numDays) {
+        // Remove dias existentes
+        const existingDays = document.querySelectorAll('.number');
+        existingDays.forEach(day => day.remove());
+
+        // Adiciona os novos dias
+        for (let i = 1; i <= numDays; i++) {
+            const dayElement = document.createElement('p');
+            dayElement.className = 'number';
+            dayElement.textContent = i;
+            dayElement.addEventListener('click', function() {
+                showInfoBox(i, monthNames[currentMonthIndex]);
+            });
+            daysContainer.appendChild(dayElement);
+        }
+    }
+
+    passLeft.addEventListener('click', function() {
+        currentMonthIndex = (currentMonthIndex - 1 + 12) % 12; // Navegação dos meses para a esquerda
+        updateCalendar();
+    });
+
+    passRight.addEventListener('click', function() {
+        currentMonthIndex = (currentMonthIndex + 1) % 12; // Navegação dos meses para a direita
+        updateCalendar();
+    });
+
+    function showInfoBox(day, month) {
+        const infoBox = document.createElement('div');
+        infoBox.className = 'info-box';
+        infoBox.style.position = 'fixed';
+        infoBox.style.backgroundColor = 'white';
+        infoBox.style.border = '1px solid black';
+        infoBox.style.padding = '20px';
+        infoBox.style.zIndex = '1000';
+        infoBox.style.top = '50%';
+        infoBox.style.left = '50%';
+        infoBox.style.transform = 'translate(-50%, -50%)';
+
+        infoBox.innerHTML = `
+            <h3>Informações para ${day} de ${month}</h3>
+            <p>Aqui vão as informações específicas do dia ${day} de ${month}.</p>
+            <button id="close-info-box">Fechar</button>
+        `;
+
+        document.body.appendChild(infoBox);
+
+        document.getElementById('close-info-box').addEventListener('click', function() {
+            document.body.removeChild(infoBox);
+        });
+    }
+
+    updateCalendar(); // Inicializa o calendário no mês atual
+});
+function isLeapYear(year) {
+    return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+}
+
+function updateCalendar() {
+    const currentYear = new Date().getFullYear(); // Pode ser ajustado conforme o seu requisito
+    daysInMonth[1] = isLeapYear(currentYear) ? 29 : 28; // Atualiza fevereiro para 28 ou 29 dias
+
+    monthDisplay.textContent = monthNames[currentMonthIndex];
+    renderDays(daysInMonth[currentMonthIndex]);
+}
+
+window.alert('PÁGINA AINDA EM CONSTRUÇÃO') 
     </script>
     <script src="script.js"></script>
 </body>
