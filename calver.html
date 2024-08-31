@@ -8,7 +8,8 @@
     <link rel="shortcut icon" href="imagens/coracao.png" type="image/x-icon">
     <style>
         body {
-            background-color: rgb(0, 0, 0);
+            background-color: black;
+            background-image: url('imagens/faiscas2.png');
         }
         #caixa-calendario {
             display: flex;
@@ -90,24 +91,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
-        }
-        /* Estilos para o ícone de menu */
-        #imagem-menu {
-            transition: transform 0.3s ease; /* Transição suave de rotação */
-        }
-
-        /* Rotação do ícone de menu ao passar o mouse */
-        .imagem-holl:hover #imagem-menu {
-            transform: rotate(180deg); /* Gira o ícone 180 graus */
-        }
-
-        .dropdown-menu {
-            display: none; /* Inicialmente oculto */
-        }
-
-        /* Exibe o menu suspenso ao passar o mouse sobre a área que contém o ícone */
-        .imagem-holl:hover .dropdown-menu {
-            display: block;
         }
     </style>
 </head>

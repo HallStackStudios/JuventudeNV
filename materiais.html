@@ -9,27 +9,8 @@
     <style>
         body {
             background-color: rgb(0, 0, 0);
+            background-image: url('imagens/faiscas2.png');
         }
-
-        /* Estilos para o ícone de menu */
-        #imagem-menu {
-            transition: transform 0.3s ease; /* Transição suave de rotação */
-        }
-
-        /* Rotação do ícone de menu ao passar o mouse */
-        .imagem-holl:hover #imagem-menu {
-            transform: rotate(180deg); /* Gira o ícone 180 graus */
-        }
-
-        .dropdown-menu {
-            display: none; /* Inicialmente oculto */
-        }
-
-        /* Exibe o menu suspenso ao passar o mouse sobre a área que contém o ícone */
-        .imagem-holl:hover .dropdown-menu {
-            display: block;
-        }
-
         .materials-container {
             display: flex;
             flex-wrap: wrap; /* Permite que os itens "quebrem" para uma nova linha em telas menores */
@@ -46,7 +27,7 @@
 
         .div-imagem-material {
             width: 100%;
-            height: 150px;
+            height: 200px;
             margin: auto;
             border-radius: 10px;
             border: 1px solid black;
@@ -112,7 +93,8 @@
         }
         #recentes-box {
             width: 100%;
-            
+            margin-top: 90px;
+            color: whitesmoke;
         }
     </style>
 </head>
@@ -142,22 +124,20 @@
     </div>
 
     <!-- Container para os materiais -->
-        <div id="recentes-box">
-            <div class="materials-container" style="margin-top: 130px;">
-                <div class="box-material">
-                    <div class="div-imagem-material">
-                        <img src="imagens/teste.jpg" alt="a" class="imagem-material">
-                    </div>
-                    <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
-                    <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
+        <div class="materials-container" style="margin-top: 130px;">
+            <div class="box-material">
+                <div class="div-imagem-material">
+                    <img src="imagens/teste.jpg" alt="a" class="imagem-material">
                 </div>
-                <div class="box-material">
-                    <div class="div-imagem-material">
-                        <img src="imagens/teste2.jpg" alt="a" class="imagem-material">
-                    </div>
-                    <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
-                    <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
+                <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
+                <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
+            </div>
+            <div class="box-material">
+                <div class="div-imagem-material">
+                    <img src="imagens/teste2.jpg" alt="a" class="imagem-material">
                 </div>
+                <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
+                <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
             </div>
         </div>
 
