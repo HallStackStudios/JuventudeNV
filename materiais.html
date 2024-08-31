@@ -8,8 +8,9 @@
     <link rel="shortcut icon" href="imagens/coracao.png" type="image/x-icon">
     <style>
         body {
-            background-color: black;
+            background-color: rgb(0, 0, 0);
         }
+
         /* Estilos para o ícone de menu */
         #imagem-menu {
             transition: transform 0.3s ease; /* Transição suave de rotação */
@@ -27,6 +28,90 @@
         /* Exibe o menu suspenso ao passar o mouse sobre a área que contém o ícone */
         .imagem-holl:hover .dropdown-menu {
             display: block;
+        }
+
+        .materials-container {
+            display: flex;
+            flex-wrap: wrap; /* Permite que os itens "quebrem" para uma nova linha em telas menores */
+            justify-content: space-around; /* Espaçamento entre os itens */
+        }
+
+        .box-material {
+            width: 45%; /* Ajustado para que dois itens caibam lado a lado */
+            padding: 13px;
+            margin: 10px 0; /* Adiciona espaçamento entre os itens */
+            transition: all 0.2s ease-in-out;
+            box-sizing: border-box; /* Inclui o padding e border no tamanho total */
+        }
+
+        .div-imagem-material {
+            width: 100%;
+            height: 150px;
+            margin: auto;
+            border-radius: 10px;
+            border: 1px solid black;
+            background-color: whitesmoke;
+            transition: all 0.3s;
+            border-top-left-radius: 1px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .imagem-material {
+            width: 100%;
+            height: 100%; /* Ajustado para manter a proporção */
+            transition: all 0.3s;
+        }
+
+        .reflex-link-material {
+            display: block;
+            float: left;
+            color: black;
+            width: 100px;
+            text-align: center;
+            font-weight: bold;
+            border: 2px solid #bfe4ec;
+            padding: 15px;
+            border-top-left-radius: 1px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 10px;
+            text-decoration: none;
+            transition: all 0.3s;
+            background-color: whitesmoke;
+        }
+
+        .reflex-link-material:hover {
+            background-color: black;
+            color: whitesmoke;
+        }
+
+        .letras {
+            color: whitesmoke;
+            padding: 10px;
+            border: 1.5px solid #bfe4ec;
+            font-size: 22px;
+            background-color: black;
+            border-radius: 15px;
+        }
+
+        @media screen and (max-width: 550px) {
+            .materials-container {
+                flex-direction: column; /* Alinha as caixas verticalmente em telas menores */
+            }
+            .box-material {
+                width: 100%; /* Cada item ocupa a largura total */
+            }
+            .div-imagem-material {
+                height: 200px;
+            }
+            .imagem-material {
+                height: 200px;
+            }
+        }
+        #recentes-box {
+            width: 100%;
         }
     </style>
 </head>
@@ -55,23 +140,24 @@
         </nav>
     </div>
 
-    <div class="box-material" style="margin-top: 130px;">
-        <div class="div-imagem-material">
-            <img src="imagens/teste.jpg" alt="a" class="imagem-material">
+    <!-- Container para os materiais -->
+        <div class="materials-container" style="margin-top: 130px;">
+            <div class="box-material">
+                <div class="div-imagem-material">
+                    <img src="imagens/teste.jpg" alt="a" class="imagem-material">
+                </div>
+                <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
+                <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
+            </div>
+            <div class="box-material">
+                <div class="div-imagem-material">
+                    <img src="imagens/teste2.jpg" alt="a" class="imagem-material">
+                </div>
+                <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
+                <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
+            </div>
         </div>
-        <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
-        <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
-    </div>
-    <div class="box-material">
-        <div class="div-imagem-material">
-            <img src="imagens/teste2.jpg" alt="a" class="imagem-material">
-        </div>
-        <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
-        <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
-    </div>
-    <!--<a href="mt1/index.html" class="link-materiais"><div class="container-materiais" style="margin-top: 130px;">Material 1</div></a>
-    <a href="mt2/index.html" class="link-materiais"><div class="container-materiais">Material 2</div></a>
-    <a href="materiais/mt3/index.html" class="link-materiais"><div class="container-materiais">Material 3</div></a>-->
+
     <script src="script.js"></script>
 </body>
 </html>

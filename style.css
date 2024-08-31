@@ -89,14 +89,12 @@ abbr {
     line-height: 60px; /* Centraliza o texto verticalmente */
     z-index: 1000; /* Garante que a barra fique acima de outros elementos */
     transition: transform 1s ease, opacity 1s ease;
-    opacity: 0;
-    transform: translateY(-100%);
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.699);
 }
-#top-bar.visible2 {
+/*#top-bar.visible2 {
     transform: translateY(0);
     opacity: 1;
-}
+}*/
 #imagem-secundaria {
     width: 70px;
     height: 70px;
@@ -217,12 +215,9 @@ footer {
 }
 .link-lideranca {
     text-decoration: none;
-    color: rgb(255, 230, 149);
+    color: #a3eeff;
     font-weight: bold;
     transition: all 0.3s ease;
-}
-.link-lideranca:hover {
-    color: rgb(255, 196, 0);
 }
 
 
@@ -317,66 +312,4 @@ footer {
 /* Estilos do Submenu */
 .dropdown-item {
     position: relative;
-}
-.box-material {
-    width: 80%;
-    border-radius: 15px;
-    margin: auto;
-    padding: 13px;
-    transition: all 0.2s ease-in-out;
-}
-.div-imagem-material {
-    width: 100%;
-    height: 300px;
-    margin: auto;
-    border: 2px solid orange;
-    border-radius: 10px;
-    background-color: whitesmoke;
-    transition: all 0.3s;
-    border-top-left-radius: 1px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 10px;
-}
-.imagem-material {
-    width: 100%;
-    height: 300px;
-    transition: all 0.3s;
-}
-@media screen and (max-width: 550px) {
-    .div-imagem-material {
-        height: 200px;
-    }
-    .imagem-material {
-        height: 200px;
-    }
-}
-.reflex-link-material {
-    display: block;
-    float: left;
-    color: black;
-    width: 100px;
-    text-align: center;
-    font-weight: bold;
-    border: 1.5px solid orange;
-    padding: 15px;
-    border-top-left-radius: 1px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 10px;
-    text-decoration: none;
-    transition: all 0.3s;
-    background-color: whitesmoke;
-}
-.reflex-link-material:hover {
-    background-color: black;
-    color: whitesmoke;
-}
-.letras {
-    color: whitesmoke;
-    padding: 10px;
-    border: 1.5px solid orange;
-    font-size: 22px;
-    background-color: black;
-    border-radius: 15px;
 }
