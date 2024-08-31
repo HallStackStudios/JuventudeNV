@@ -333,6 +333,10 @@ footer {
     border-radius: 10px;
     background-color: whitesmoke;
     transition: all 0.3s;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 10px;
 }
 .imagem-material {
     width: 100%;
@@ -351,12 +355,15 @@ footer {
     display: block;
     float: left;
     color: black;
+    width: 100px;
+    text-align: center;
     font-weight: bold;
     border: 1.5px solid orange;
     padding: 15px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 10px;
     text-decoration: none;
     transition: all 0.3s;
     background-color: whitesmoke;
