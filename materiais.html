@@ -48,7 +48,6 @@
         .reflex-link-material-recente {
             display: block;
             float: left;
-            
             width: 100px;
             text-align: center;
             font-weight: bold;
@@ -60,14 +59,14 @@
             border-bottom-left-radius: 10px;
             text-decoration: none;
             transition: all 0.3s;
-           
-            background-color: black;
-            color: whitesmoke;
+            background-color: whitesmoke;
+            color: black;
         }
 
         .reflex-link-material-recente:hover {
-            background-color: whitesmoke;
-            color: black;
+            background-color: black;
+            color: whitesmoke;
+            border: 2px solid orangered;
         }
         .reflex-link-material {
             display: block;
@@ -99,8 +98,16 @@
             font-size: 22px;
             background-color: black;
             border-radius: 15px;
+            text-align: center;
         }
-
+        .letras-recente {
+            color: black;
+            padding: 10px;
+            border: 1.5px solid black;
+            font-size: 22px;
+            background-color: whitesmoke;
+            border-radius: 15px;
+        }
         @media screen and (max-width: 550px) {
             .materials-container {
                 flex-direction: column; /* Alinha as caixas verticalmente em telas menores */
@@ -122,6 +129,7 @@
             border-radius: 13px;
             margin: auto;
             width: 95%;
+            margin-bottom: 50px;
         }
     </style>
 </head>
@@ -159,48 +167,21 @@
                     <div class="div-imagem-material">
                         <img src="imagens/teste.jpg" alt="a" class="imagem-material">
                     </div>
-                    <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
+                    <h1 class="letras-recente">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
                     <a href="mt1/index.html" class="reflex-link-material-recente">Leia Mais</a>
                 </div>
                 <div class="box-material">
                     <div class="div-imagem-material">
                         <img src="imagens/teste2.jpg" alt="a" class="imagem-material">
                     </div>
-                    <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
-                    <a href="mt1/index.html" class="reflex-link-material-recente">Leia Mais</a>
+                    <h1 class="letras-recente">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
+                    <a href="mt2/index.html" class="reflex-link-material-recente">Leia Mais</a>
                 </div>
             </div>
         </div>
-        <div class="materials-container">
-            <div class="box-material">
-                <div class="div-imagem-material">
-                    <img src="imagens/teste.jpg" alt="a" class="imagem-material">
-                </div>
-                <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
-                <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
-            </div>
-            <div class="box-material">
-                <div class="div-imagem-material">
-                    <img src="imagens/teste2.jpg" alt="a" class="imagem-material">
-                </div>
-                <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
-                <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
-            </div>
-            <div class="box-material">
-                <div class="div-imagem-material">
-                    <img src="imagens/teste2.jpg" alt="a" class="imagem-material">
-                </div>
-                <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
-                <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
-            </div>
-            <div class="box-material">
-                <div class="div-imagem-material">
-                    <img src="imagens/teste2.jpg" alt="a" class="imagem-material">
-                </div>
-                <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
-                <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
-            </div>
-        </div>
+        <script>
+            window.alert("Página passando por MODIFICAÇÕES")
+        </script>
     <script src="script.js"></script>
 </body>
 </html>

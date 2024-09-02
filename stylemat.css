@@ -34,3 +34,21 @@ main {
 .ancora-voltar:hover {
     color: rgb(82, 82, 82);
 }
+.box-img-material {
+    width: 100%;
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.img-material {
+    width: 100%;
+    height: 250px;
+}
+@media screen and (max-width: 550px) {
+    .box-img-material {
+        height: 200px;
+    }
+    .img-material {
+        height: 200px;
+    }
+}
