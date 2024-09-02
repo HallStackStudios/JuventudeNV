@@ -48,11 +48,11 @@
         .reflex-link-material {
             display: block;
             float: left;
-            color: black;
+            
             width: 100px;
             text-align: center;
             font-weight: bold;
-            border: 2px solid #bfe4ec;
+            border: 2px solid orange;
             padding: 15px;
             border-top-left-radius: 1px;
             border-top-right-radius: 20px;
@@ -60,13 +60,14 @@
             border-bottom-left-radius: 10px;
             text-decoration: none;
             transition: all 0.3s;
-            background-color: whitesmoke;
+           
+            background-color: black;
+            color: whitesmoke;
         }
 
         .reflex-link-material:hover {
-            background-color: black;
-            color: whitesmoke;
-            border: 2px solid orange;
+            background-color: whitesmoke;
+            color: black;
         }
 
         .letras {
@@ -92,10 +93,15 @@
                 height: 200px;
             }
         }
-        #recentes-box {
+        #material-recente {
             width: 100%;
-            margin-top: 90px;
-            color: whitesmoke;
+            text-align: center;
+            background-color: whitesmoke;
+            border-radius: 7px;
+            margin: auto;
+            width: 95%;
+            font-weight: bold;
+            font-size: 18px;
         }
     </style>
 </head>
@@ -125,7 +131,26 @@
     </div>
 
     <!-- Container para os materiais -->
-        <div class="materials-container" style="margin-top: 130px;">
+        <div id="material-recente" style="margin-top: 130px;">
+            <h1 style="color: black;">Estudos Bíblicos Recentes</h1>
+            <div class="materials-container">
+                <div class="box-material">
+                    <div class="div-imagem-material">
+                        <img src="imagens/teste.jpg" alt="a" class="imagem-material">
+                    </div>
+                    <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
+                    <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
+                </div>
+                <div class="box-material">
+                    <div class="div-imagem-material">
+                        <img src="imagens/teste2.jpg" alt="a" class="imagem-material">
+                    </div>
+                    <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
+                    <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="materials-container">
             <div class="box-material">
                 <div class="div-imagem-material">
                     <img src="imagens/teste.jpg" alt="a" class="imagem-material">
@@ -141,7 +166,6 @@
                 <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
             </div>
         </div>
-
     <script src="script.js"></script>
 </body>
 </html>
