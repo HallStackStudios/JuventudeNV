@@ -45,7 +45,7 @@
             transition: all 0.3s;
         }
 
-        .reflex-link-material {
+        .reflex-link-material-recente {
             display: block;
             float: left;
             
@@ -65,11 +65,33 @@
             color: whitesmoke;
         }
 
-        .reflex-link-material:hover {
+        .reflex-link-material-recente:hover {
             background-color: whitesmoke;
             color: black;
         }
-
+        .reflex-link-material {
+            display: block;
+            float: left;
+            
+            width: 100px;
+            text-align: center;
+            font-weight: bold;
+            border: 2px solid orange;
+            padding: 15px;
+            border-top-left-radius: 1px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 10px;
+            text-decoration: none;
+            transition: all 0.3s;
+           
+            background-color: whitesmoke;
+            color: black;
+        }
+        .reflex-link-material:hover {
+            background-color: black;
+            color: whitesmoke;
+        }
         .letras {
             color: whitesmoke;
             padding: 10px;
@@ -97,11 +119,9 @@
             width: 100%;
             text-align: center;
             background-color: whitesmoke;
-            border-radius: 7px;
+            border-radius: 13px;
             margin: auto;
             width: 95%;
-            font-weight: bold;
-            font-size: 18px;
         }
     </style>
 </head>
@@ -132,21 +152,22 @@
 
     <!-- Container para os materiais -->
         <div id="material-recente" style="margin-top: 130px;">
-            <h1 style="color: black;">Estudos Bíblicos Recentes</h1>
+            <h1 style="color: black;font-weight: bold;
+            font-size: 38px;">Estudos Bíblicos Recentes</h1>
             <div class="materials-container">
                 <div class="box-material">
                     <div class="div-imagem-material">
                         <img src="imagens/teste.jpg" alt="a" class="imagem-material">
                     </div>
                     <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
-                    <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
+                    <a href="mt1/index.html" class="reflex-link-material-recente">Leia Mais</a>
                 </div>
                 <div class="box-material">
                     <div class="div-imagem-material">
                         <img src="imagens/teste2.jpg" alt="a" class="imagem-material">
                     </div>
                     <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
-                    <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
+                    <a href="mt1/index.html" class="reflex-link-material-recente">Leia Mais</a>
                 </div>
             </div>
         </div>
@@ -154,6 +175,20 @@
             <div class="box-material">
                 <div class="div-imagem-material">
                     <img src="imagens/teste.jpg" alt="a" class="imagem-material">
+                </div>
+                <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
+                <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
+            </div>
+            <div class="box-material">
+                <div class="div-imagem-material">
+                    <img src="imagens/teste2.jpg" alt="a" class="imagem-material">
+                </div>
+                <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
+                <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
+            </div>
+            <div class="box-material">
+                <div class="div-imagem-material">
+                    <img src="imagens/teste2.jpg" alt="a" class="imagem-material">
                 </div>
                 <h1 class="letras">(COLOQUE AQUI O TEMA DO MATERIAL)</h1>
                 <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
