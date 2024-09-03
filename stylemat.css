@@ -60,9 +60,9 @@ main {
 }
 @media screen and (max-width: 550px) {
     .box-img-material {
-        height: 200px;
+        height: 230px;
     }
     .img-material {
-        height: 200px;
+        height: 230px;
     }
 }
