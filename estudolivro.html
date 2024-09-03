@@ -27,7 +27,7 @@
 
         .div-imagem-material {
             width: 100%;
-            height: 220px;
+            height: 240px;
             margin: auto;
             border-radius: 10px;
             border: 1px solid black;
@@ -167,6 +167,42 @@
     opacity: 0; /* Inicialmente invisível */
     animation: slideDown 0.5s ease forwards; /* Animação aplicada */
 }
+/* Estilo específico para o contêiner de materiais antigos */
+#material-antigo {
+    width: 90%;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.986);
+    border-radius: 13px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#h1-antigo {
+    color: black;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+/* Layout de 3 colunas para materiais antigos */
+.antigos-container .box-material {
+    width: 30%; /* Ajustado para que três itens caibam lado a lado */
+}
+
+@media screen and (max-width: 768px) {
+    .antigos-container .box-material {
+        width: 45%; /* Ajusta para duas colunas em telas médias */
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .antigos-container .box-material {
+        width: 100%; /* Cada item ocupa a largura total em telas pequenas */
+    }
+    #h1-antigo {
+        font-size: 27px;
+        margin-top: 30px;
+    }
+}
 
     </style>
 </head>
@@ -201,7 +237,7 @@
 
     <!-- Container para os materiais -->
         <div id="material-recente" style="margin-top: 130px;">
-            <h1 id="h1-recente">Estudos de Livros Recentes:</h1>
+            <h1 id="h1-recente">Estudos de Livros Recentes</h1>
             <div class="materials-container">
                 <div class="box-material">
                     <div class="div-imagem-material">
@@ -219,6 +255,36 @@
                 </div>
             </div>
         </div>
+
+        <!-- Container para os materiais antigos -->
+<div id="material-antigo" style="margin-top: 30px;">
+    <h1 id="h1-antigo">Estudos Bíblicos Antigos</h1>
+    <div class="materials-container antigos-container">
+        <div class="box-material box-material-antigo">
+            <div class="div-imagem-material">
+                <img src="imagens/tela3.png" alt="a" class="imagem-material">
+            </div>
+            <h1 class="letras">Antigo Material 1</h1>
+            <a href="mt3/index.html" class="reflex-link-material">Leia Mais</a>
+        </div>
+        <div class="box-material box-material-antigo">
+            <div class="div-imagem-material">
+                <img src="imagens/tela4.png" alt="a" class="imagem-material">
+            </div>
+            <h1 class="letras">Antigo Material 2</h1>
+            <a href="mt4/index.html" class="reflex-link-material">Leia Mais</a>
+        </div>
+        <div class="box-material box-material-antigo">
+            <div class="div-imagem-material">
+                <img src="imagens/tela5.png" alt="a" class="imagem-material">
+            </div>
+            <h1 class="letras">Antigo Material 3</h1>
+            <a href="mt5/index.html" class="reflex-link-material">Leia Mais</a>
+        </div>
+        <!-- Adicione mais caixas de materiais antigos conforme necessário -->
+    </div>
+</div>
+
         <script>
             window.alert('página em construção')
         </script>
