@@ -66,3 +66,7 @@ main {
         height: 230px;
     }
 }
+.importante-aviso {
+    text-align: center;
+    font: 18px;
+}
