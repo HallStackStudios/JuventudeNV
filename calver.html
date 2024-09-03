@@ -11,18 +11,6 @@
             background-color: black;
             background-image: url('imagens/faiscas2.png');
         }
-        #caixa-calendario {
-            display: flex;
-            flex-wrap: wrap;
-            background-color: whitesmoke;
-            width: 80%;
-            border-radius: 10px;
-            padding: 15px;
-            height: 100%;
-            margin: auto;
-            margin-top: 130px;
-            margin-bottom: 50px;
-        }
         .break {
             width: 100%;
             height: 0;
@@ -92,6 +80,32 @@
         transform: translate(-50%, -50%);
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
         }
+        @keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-70px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#caixa-calendario {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: rgba(245, 245, 245, 0.986);
+    border-radius: 13px;
+    margin: auto;
+    margin-top: 130px;
+    margin-bottom: 50px;
+    opacity: 0; /* Inicialmente invisível */
+    animation: slideDown 0.5s ease forwards; /* Animação aplicada */
+}
+
     </style>
 </head>
 <body>

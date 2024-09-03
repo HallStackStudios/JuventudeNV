@@ -60,10 +60,10 @@ main {
 }
 @media screen and (max-width: 550px) {
     .box-img-material {
-        height: 230px;
+        height: 220px;
     }
     .img-material {
-        height: 230px;
+        height: 220px;
     }
 }
 .importante-aviso {

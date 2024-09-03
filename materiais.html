@@ -118,10 +118,10 @@
                 width: 100%; /* Cada item ocupa a largura total */
             }
             .div-imagem-material {
-                height: 200px;
+                height: 220px;
             }
             .imagem-material {
-                height: 200px;
+                height: 220px;
             }
         }
         #material-recente {
@@ -147,6 +147,29 @@
                 margin-top: 30px;
             }
         }
+        @keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-70px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#material-recente {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.986);
+    border-radius: 13px;
+    margin: auto;
+    width: 95%;
+    margin-bottom: 50px;
+    opacity: 0; /* Inicialmente invisível */
+    animation: slideDown 0.5s ease forwards; /* Animação aplicada */
+}
+
     </style>
 </head>
 <body>
