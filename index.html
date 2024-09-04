@@ -10,6 +10,26 @@
         body {
             background-color: black;
         }
+        @keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-70px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.section-transparence {
+    height: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    opacity: 0; /* Inicialmente invisível */
+    animation: slideDown 0.5s ease forwards; /* Animação aplicada */
+}
+.breaking {
+    width: 100%;
+}
     </style>
 </head>
 <body>
