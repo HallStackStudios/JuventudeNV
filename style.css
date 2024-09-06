@@ -321,6 +321,14 @@ footer {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
+#imagem-menu {
+            display: inline-block;
+            transition: transform 0.6s ease;
+        }
+        
+        #imagem-menu:hover {
+            transform: rotate(180deg);
+        }
 
 /* Exibir o Menu Dropdown com Efeito */
 .imagem-holl:hover .dropdown-menu {
