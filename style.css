@@ -434,3 +434,6 @@ footer {
         min-height: 450px;
     }
 }
+.material {
+    border: 2px solid black;
+}
