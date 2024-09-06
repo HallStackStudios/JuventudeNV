@@ -81,7 +81,7 @@ abbr {
 #top-bar {
     width: 100%;
     height: 90px; /* Ajuste a altura conforme necessário */
-    background-color: #ffe77d;
+    background-color: #fae178;
     color: skyblue;
     font-weight: bold;
     position: absolute;
@@ -121,11 +121,14 @@ abbr {
     width: 0px;
     padding: 10px;
     height: 0px;
-    border-radius: 20px;
-    transition: all 0.4s ease-out;
+    border: 2px solid #fae178;
+    border-radius: 10px;
+    transition: all 0.4s;
+    margin-left: 5px;
+    padding: 10px;
 }
 .link-origin:hover {
-    color: rgba(29, 29, 29, 0.678);
+    border: 2px solid black;
     cursor: pointer;
 }
 .container-materiais {
