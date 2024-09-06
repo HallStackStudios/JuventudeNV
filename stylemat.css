@@ -70,3 +70,14 @@ main {
     text-align: center;
     font: 18px;
 }
+.escrita-autor {
+    font-style: italic;
+    margin: auto;
+    max-width: 800px;
+}
+.lista-estudo {
+    display: block;
+    margin: auto;
+    max-width: 800px;
+    margin-top: 20px;
+}
