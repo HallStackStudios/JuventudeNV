@@ -186,6 +186,9 @@ abbr {
     border-radius: 15px;
     margin-top: 25px;
     margin-bottom: 25px;
+    flex-wrap: wrap;
+    opacity: 0; /* Inicialmente invisível */
+    animation: slideDown 0.5s ease forwards; /* Animação aplicada */
 }
 footer {
     margin: auto;
@@ -207,7 +210,7 @@ footer {
     text-align: center;
     border-radius: 10px;
     margin-top: 30px;
-    border: 2px solid rgba(245, 245, 245, 0.911);
+    border: 2px solid rgba(245, 245, 245, 0.836);
 }
 #link-footer:hover {
     color: black;
@@ -329,4 +332,97 @@ footer {
 /* Estilos do Submenu */
 .dropdown-item {
     position: relative;
+}
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .container-cor {
+        height: 100%;
+    }
+    footer {
+        height: 150px;
+        position: relative;
+        font-size: 25px;
+        top: 100%;
+        margin: auto;
+    }
+    .section-transparence {
+        height: 100%;
+        font-size: 28px;
+        max-width: 1200px;
+    }
+    #caixa-calendario {
+        height: 800px;
+        font-size: 30px;
+        max-width: 1000px;
+    }
+    .material {
+        padding-bottom: 37px;
+    }
+    .div-imagem-material {
+        min-height: 350px;
+    }
+    .imagem-material {
+        min-height: 350px;
+    }
+}
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
+    .container-cor {
+        height: 100%;
+    }
+    footer {
+        height: 150px;
+        position: relative;
+        font-size: 25px;
+        top: 100%;
+        margin: auto;
+    }
+    .section-transparence {
+        height: 100%;
+        font-size: 28px;
+        max-width: 1100px;
+    }
+    #caixa-calendario {
+        height: 800px;
+        font-size: 30px;
+        max-width: 1000px;
+    }
+    .material {
+        padding-bottom: 37px;
+    }
+    .div-imagem-material {
+        min-height: 400px;
+    }
+    .imagem-material {
+        min-height: 400px;
+    }
+}
+@media screen and (min-width: 2560px) {
+    .container-cor {
+        height: 100%;
+    }
+    footer {
+        height: 150px;
+        position: relative;
+        font-size: 25px;
+        top: 100%;
+        margin: auto;
+    }
+    .section-transparence {
+        height: 100%;
+        font-size: 28px;
+        max-width: 1000px;
+    }
+    #caixa-calendario {
+        height: 800px;
+        font-size: 30px;
+        max-width: 1000px;
+    }
+    .material {
+        padding-bottom: 37px;
+    }
+    .div-imagem-material {
+        min-height: 450px;
+    }
+    .imagem-material {
+        min-height: 450px;
+    }
 }
