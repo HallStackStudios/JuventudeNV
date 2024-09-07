@@ -116,12 +116,13 @@ main {
     }
 }
 @media screen and (max-width: 550px) {
-    main {
-        width: 88%;
-    }
-}
-@media screen and (max-width: 550px) {
     .mavie {
         font-size: 23px;
+    }
+    .material {
+        border: 0;
+    }
+    main {
+        width: 100%;
     }
 }
