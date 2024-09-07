@@ -115,14 +115,16 @@ main {
         height: 440px;
     }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 670px) {
     .mavie {
         font-size: 23px;
     }
-    .material {
+    .mat {
         border: 0;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
     }
     main {
-        width: 100%;
+        width: 90%;
     }
 }
