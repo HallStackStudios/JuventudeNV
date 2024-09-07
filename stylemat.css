@@ -120,3 +120,8 @@ main {
         width: 88%;
     }
 }
+@media screen and (max-width: 550px) {
+    .mavie {
+        font-size: 23px;
+    }
+}
