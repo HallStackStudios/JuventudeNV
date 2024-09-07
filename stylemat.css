@@ -115,8 +115,8 @@ main {
         height: 440px;
     }
 }
-media screen and (max-width: 550px) {
+@media screen and (max-width: 550px) {
     main {
-        width: 90%;
+        width: 88%;
     }
 }

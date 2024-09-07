@@ -131,7 +131,12 @@
             border: 2px solid black;
         }
 #material-antigo {
-    width: 95%
+    width: 95%;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.986);
+    border-radius: 13px;
+    margin: auto;
+    margin-bottom: 50px;
 }
         #h1-recente {
             color: black;
@@ -147,7 +152,7 @@
                 margin-top: 30px;
             }
             #material-antigo {
-            width: 85%;
+            width: 90%;
 }
         }
         @keyframes slideDown {
@@ -171,14 +176,7 @@
     animation: slideDown 0.5s ease forwards; /* Animação aplicada */
 }
 /* Estilo específico para o contêiner de materiais antigos */
-#material-antigo {
-    width: 95%;
-    text-align: center;
-    background-color: rgba(245, 245, 245, 0.986);
-    border-radius: 13px;
-    margin: auto;
-    margin-bottom: 50px;
-}
+
 
 #h1-antigo {
     color: black;
@@ -195,7 +193,6 @@
     .antigos-container .box-material {
         width: 45%; /* Ajusta para duas colunas em telas médias */
     }
-}
     #h1-antigo {
         font-size: 27px;
         margin-top: 30px;
@@ -205,6 +202,9 @@
      .antigos-container .box-material {
 width: 100%
 }
+}
+#move {
+    width: 90%;
 }
     </style>
 </head>
@@ -261,7 +261,7 @@ width: 100%
         </div>
 
         
-<div id="material-antigo" style="margin-top: 30px;" class="material">
+<div id="material-antigo" style="margin-top: 30px;" class="material" id="move">
     <h1 id="h1-antigo">Estudos de Livros Antigos</h1>
     <div class="materials-container antigos-container">
         <div class="box-material box-material-antigo">
