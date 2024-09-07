@@ -306,11 +306,11 @@ footer {
 
 /* Hover no link do menu */
 .dropdown-menu a:hover {
-    background-color: #fae178;
+    /*background-color: #fae178;
     color: black;
-    border: 2px solid black;
-    /*background-color: rgba(0, 0, 0, 0.719);
-    color: whitesmoke;*/
+    border: 2px solid black;*/
+    background-color: rgba(0, 0, 0, 0.719);
+    color: whitesmoke;
 }
 
 /* Estilos do Ícone de Menu */
