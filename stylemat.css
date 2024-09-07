@@ -9,11 +9,7 @@ body {
     height: 100%;
 }
 
-@media screen and (max-width: 550px) {
-    main {
-        width: 79%;
-    }
-}
+
 .ancora-voltar {
     color: whitesmoke;
     text-decoration: none;
@@ -117,5 +113,10 @@ main {
     }
     .img-material {
         height: 440px;
+    }
+}
+media screen and (max-width: 550px) {
+    main {
+        width: 90%;
     }
 }
