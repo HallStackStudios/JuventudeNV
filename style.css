@@ -301,12 +301,14 @@ footer {
     color: black;
     font-weight: bold;
     transition: all 0.3s ease;
+    border: 2px solid whitesmoke;
 }
 
 /* Hover no link do menu */
 .dropdown-menu a:hover {
-    background-color: #000000;
-    color: whitesmoke;
+    background-color: #fae178;
+    color: black;
+    border: 2px solid black;
 }
 
 /* Estilos do Ícone de Menu */
