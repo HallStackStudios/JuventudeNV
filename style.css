@@ -20,7 +20,7 @@
 }
 
 .main-content h2 {
-    color: #000000; /* Azul mais escuro */
+    color: #000000; 
 }
 
 #imagem-principal {
@@ -80,14 +80,14 @@ abbr {
 
 #top-bar {
     width: 100%;
-    height: 90px; /* Ajuste a altura conforme necessário */
+    height: 90px; 
     background-color: #fae178;
     color: skyblue;
     font-weight: bold;
     position: absolute;
     text-align: center;
-    line-height: 60px; /* Centraliza o texto verticalmente */
-    z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+    line-height: 60px;
+    z-index: 1000; 
     transition: transform 1s ease, opacity 1s ease;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.699);
     opacity: 0;
@@ -187,8 +187,8 @@ abbr {
     margin-top: 25px;
     margin-bottom: 25px;
     flex-wrap: wrap;
-    opacity: 0; /* Inicialmente invisível */
-    animation: slideDown 0.5s ease forwards; /* Animação aplicada */
+    opacity: 0; 
+    animation: slideDown 0.5s ease forwards; 
 }
 footer {
     margin: auto;
@@ -240,11 +240,6 @@ footer {
     transition: all 0.3s ease;
 }
 
-
-/*divisa*/
-
-
-
 .imagem-holl {
     display: none;
     width: 50px;
@@ -275,7 +270,6 @@ footer {
         display: block;
     }
 }
-/* Estilos do Menu Dropdown */
 .dropdown-menu {
     display: block;
     position: fixed;
@@ -292,7 +286,6 @@ footer {
     visibility: hidden;
 }
 
-/* Links do Menu */
 .dropdown-menu a {
     padding: 8px 12px;
     text-decoration: none;
@@ -304,7 +297,6 @@ footer {
     border: 2px solid whitesmoke;
 }
 
-/* Hover no link do menu */
 .dropdown-menu a:hover {
     /*background-color: #fae178;
     color: black;
@@ -313,7 +305,6 @@ footer {
     color: whitesmoke;
 }
 
-/* Estilos do Ícone de Menu */
 #imagem-menu {
     display: block;
     float: left;
@@ -334,14 +325,12 @@ footer {
             transform: rotate(180deg);
         }
 
-/* Exibir o Menu Dropdown com Efeito */
 .imagem-holl:hover .dropdown-menu {
     opacity: 1;
     transform: translateY(0);
     visibility: visible;
 }
 
-/* Estilos do Submenu */
 .dropdown-item {
     position: relative;
 }
