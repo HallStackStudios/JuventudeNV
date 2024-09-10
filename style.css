@@ -20,7 +20,7 @@ body {
 }
 
 .main-content h2 {
-    color: #000000; /* Azul mais escuro */
+    color: #000000; 
 }
 
 #imagem-principal {
@@ -80,16 +80,16 @@ abbr {
 
 #top-bar {
     width: 100%;
-    height: 90px; /* Ajuste a altura conforme necessário */
+    height: 90px; 
     background-color: #fae178;
     color: skyblue;
     font-weight: bold;
     position: absolute;
     text-align: center;
-    line-height: 60px; /* Centraliza o texto verticalmente */
-    z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+    line-height: 60px;
+    z-index: 1000; 
     transition: transform 1s ease, opacity 1s ease;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.699);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.699);
     opacity: 0;
     transform: translateY(-100%);
     transition: transform 1s ease, opacity 1s ease;
@@ -177,7 +177,7 @@ abbr {
     margin-top: 90px;
 }
 .section-transparence {
-    background-color: rgba(0, 0, 0, 0.726);
+    background-color: black;
     color: whitesmoke;
     font-size: 17px;
     padding: 15px;
@@ -186,6 +186,9 @@ abbr {
     border-radius: 15px;
     margin-top: 25px;
     margin-bottom: 25px;
+    flex-wrap: wrap;
+    opacity: 0; 
+    animation: slideDown 0.5s ease forwards; 
 }
 footer {
     margin: auto;
@@ -207,7 +210,7 @@ footer {
     text-align: center;
     border-radius: 10px;
     margin-top: 30px;
-    border: 2px solid rgba(245, 245, 245, 0.911);
+    border: 2px solid rgba(245, 245, 245, 0.836);
 }
 #link-footer:hover {
     color: black;
@@ -236,11 +239,6 @@ footer {
     font-weight: bold;
     transition: all 0.3s ease;
 }
-
-
-/*divisa*/
-
-
 
 .imagem-holl {
     display: none;
@@ -272,7 +270,6 @@ footer {
         display: block;
     }
 }
-/* Estilos do Menu Dropdown */
 .dropdown-menu {
     display: block;
     position: fixed;
@@ -289,7 +286,6 @@ footer {
     visibility: hidden;
 }
 
-/* Links do Menu */
 .dropdown-menu a {
     padding: 8px 12px;
     text-decoration: none;
@@ -300,13 +296,11 @@ footer {
     transition: all 0.3s ease;
 }
 
-/* Hover no link do menu */
 .dropdown-menu a:hover {
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.719);
     color: whitesmoke;
 }
 
-/* Estilos do Ícone de Menu */
 #imagem-menu {
     display: block;
     float: left;
@@ -318,15 +312,117 @@ footer {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
+#imagem-menu {
+            display: inline-block;
+            transition: transform 0.6s ease;
+        }
+        
+        #imagem-menu:hover {
+            transform: rotate(180deg);
+        }
 
-/* Exibir o Menu Dropdown com Efeito */
 .imagem-holl:hover .dropdown-menu {
     opacity: 1;
     transform: translateY(0);
     visibility: visible;
 }
 
-/* Estilos do Submenu */
 .dropdown-item {
     position: relative;
+}
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .container-cor {
+        height: 100%;
+    }
+    footer {
+        height: 150px;
+        position: relative;
+        font-size: 25px;
+        top: 100%;
+        margin: auto;
+    }
+    .section-transparence {
+        height: 100%;
+        font-size: 28px;
+        max-width: 1200px;
+    }
+    #caixa-calendario {
+        height: 800px;
+        font-size: 30px;
+        max-width: 1000px;
+    }
+    .material {
+        padding-bottom: 37px;
+    }
+    .div-imagem-material {
+        min-height: 350px;
+    }
+    .imagem-material {
+        min-height: 350px;
+    }
+}
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
+    .container-cor {
+        height: 100%;
+    }
+    footer {
+        height: 150px;
+        position: relative;
+        font-size: 25px;
+        top: 100%;
+        margin: auto;
+    }
+    .section-transparence {
+        height: 100%;
+        font-size: 28px;
+        max-width: 1100px;
+    }
+    #caixa-calendario {
+        height: 800px;
+        font-size: 30px;
+        max-width: 1000px;
+    }
+    .material {
+        padding-bottom: 37px;
+    }
+    .div-imagem-material {
+        min-height: 400px;
+    }
+    .imagem-material {
+        min-height: 400px;
+    }
+}
+@media screen and (min-width: 2560px) {
+    .container-cor {
+        height: 100%;
+    }
+    footer {
+        height: 150px;
+        position: relative;
+        font-size: 25px;
+        top: 100%;
+        margin: auto;
+    }
+    .section-transparence {
+        height: 100%;
+        font-size: 28px;
+        max-width: 1000px;
+    }
+    #caixa-calendario {
+        height: 800px;
+        font-size: 30px;
+        max-width: 1000px;
+    }
+    .material {
+        padding-bottom: 37px;
+    }
+    .div-imagem-material {
+        min-height: 450px;
+    }
+    .imagem-material {
+        min-height: 450px;
+    }
+}
+.material {
+    border: 2px solid black;
 }

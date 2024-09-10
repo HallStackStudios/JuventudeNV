@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Materiais</title>
+    <title>Estudos (Livro)</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/coracao.png" type="image/x-icon">
     <style>
         body {
-            background-color: rgb(0, 0, 0);
-            background-image: url('imagens/faiscas2.png');
+            background-color: whitesmoke;
         }
         .materials-container {
             display: flex;
@@ -123,14 +122,22 @@
             }
         }
         #material-recente {
-            width: 100%;
             text-align: center;
             background-color: rgba(245, 245, 245, 0.986);
             border-radius: 13px;
             margin: auto;
             width: 95%;
             margin-bottom: 50px;
+            border: 2px solid black;
         }
+#material-antigo {
+    width: 95%;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.986);
+    border-radius: 13px;
+    margin: auto;
+    margin-bottom: 50px;
+}
         #h1-recente {
             color: black;
             font-weight: bold;
@@ -144,6 +151,9 @@
                 font-size: 27px;
                 margin-top: 30px;
             }
+            #material-antigo {
+            width: 90%;
+}
         }
         @keyframes slideDown {
     0% {
@@ -166,14 +176,7 @@
     animation: slideDown 0.5s ease forwards; /* Animação aplicada */
 }
 /* Estilo específico para o contêiner de materiais antigos */
-#material-antigo {
-    width: 95%;
-    text-align: center;
-    background-color: rgba(245, 245, 245, 0.986);
-    border-radius: 13px;
-    margin: auto;
-    margin-bottom: 50px;
-}
+
 
 #h1-antigo {
     color: black;
@@ -190,18 +193,19 @@
     .antigos-container .box-material {
         width: 45%; /* Ajusta para duas colunas em telas médias */
     }
-}
-
-@media screen and (max-width: 550px) {
-    .antigos-container .box-material {
-        width: 100%; /* Cada item ocupa a largura total em telas pequenas */
-    }
     #h1-antigo {
         font-size: 27px;
         margin-top: 30px;
     }
 }
-
+@media screen and (max-width: 550px) {
+     .antigos-container .box-material {
+width: 100%
+}
+}
+#move {
+    width: 90%;
+}
     </style>
 </head>
 <body>
@@ -234,12 +238,12 @@
     </div>
 
     <!-- Container para os materiais -->
-        <div id="material-recente" style="margin-top: 130px;">
+        <div id="material-recente" style="margin-top: 130px;" class="material">
             <h1 id="h1-recente">Estudos de Livros Recentes</h1>
             <div class="materials-container">
                 <div class="box-material">
                     <div class="div-imagem-material">
-                        <img src="lv1/arteQT.png" alt="a" class="imagem-material">
+                        <img src="lv1/gg.jpg" alt="a" class="imagem-material">
                     </div>
                     <h1 class="letras-recente" style="font-style: italic;">*A quarta dimensão*</h1>
                     <a href="lv1/index.html" class="reflex-link-material-recente">Leia Mais</a>
@@ -247,7 +251,7 @@
 
                 <div class="box-material">
                     <div class="div-imagem-material">
-                        <img src="lv3/arteKRP.png" alt="a" class="imagem-material">
+                        <img src="lv3/gg.jpg" alt="a" class="imagem-material">
                     </div>
                     <h1 class="letras" style="font-style: italic;">*Kriptonita*</h1>
                     <a href="lv3/index.html" class="reflex-link-material">Leia Mais</a>
@@ -257,12 +261,12 @@
         </div>
 
         
-<div id="material-antigo" style="margin-top: 30px;">
+<div id="material-antigo" style="margin-top: 30px;" class="material" id="move">
     <h1 id="h1-antigo">Estudos de Livros Antigos</h1>
     <div class="materials-container antigos-container">
         <div class="box-material box-material-antigo">
             <div class="div-imagem-material">
-                <img src="lv2/arteVQT.png" alt="a" class="imagem-material">
+                <img src="lv2/gg.jpg" alt="a" class="imagem-material">
             </div>
             <h1 class="letras-recente" style="font-style: italic;">*Viva na quarta dimensão*</h1>
             <a href="lv2/index.html" class="reflex-link-material-recente">Leia Mais</a>
