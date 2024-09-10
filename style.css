@@ -124,7 +124,7 @@ abbr {
     border: 2px solid #fae178;
     border-radius: 10px;
     transition: all 0.4s;
-    margin-left: 5 px;
+    margin-left: 5px;
     padding: 10px;
 }
 .link-origin:hover {
@@ -177,7 +177,7 @@ abbr {
     margin-top: 90px;
 }
 .section-transparence {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.815);
     color: whitesmoke;
     font-size: 17px;
     padding: 15px;
