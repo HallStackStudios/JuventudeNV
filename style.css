@@ -167,6 +167,13 @@ abbr {
     height: 70px;
     border-radius: 50%;
 }
+.img-whats {
+    display: block;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    float: right;
+}
 .container-cor {
     background-image: url('imagens/fogo-pequeno.png');
     background-position: center center;
