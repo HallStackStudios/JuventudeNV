@@ -61,3 +61,35 @@ document.addEventListener("DOMContentLoaded", function () {
     // Chama a função para exibir o top-bar após um pequeno atraso
     setTimeout(showTopBar, 500); // Ajuste o tempo de atraso conforme necessário
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const loginBar = document.getElementById('login-bar');
+
+    // Verifica se o usuário está logado
+    const isLoggedIn = localStorage.getItem('loggedIn');
+
+    if (!isLoggedIn) {
+        // Se não estiver logado, exibe a barra de login
+        loginBar.classList.add('active');
+    }
+
+    // Função de login
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // Verificação simples (pode ser substituída por uma validação mais robusta)
+        if (username === "usuario" && password === "senha123") {
+            localStorage.setItem('loggedIn', 'true');
+            loginBar.classList.remove('active');
+            alert('Login bem-sucedido!');
+        } else {
+            alert('Nome de usuário ou senha incorretos.');
+        }
+    });
+
+    // Função de registro (simulada)
+    function register() {
+        alert('Função de cadastro ainda não implementada.');
+    }
+});

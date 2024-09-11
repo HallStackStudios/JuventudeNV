@@ -11,22 +11,71 @@
             background-color: black;
         }
         @keyframes slideDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-70px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.breaking {
-    width: 100%;
-}
+            0% {
+                opacity: 0;
+                transform: translateY(-70px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .login-bar {
+            margin-top: 90px;
+            display: none; /* Inicialmente oculta */
+            background-color: #fff;
+            width: 97.8%;
+            padding: 15px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .login-bar.active {
+            display: block;
+            animation: slideDown 1s ease forwards;
+        }
+
+        .login-bar form {
+            display: inline-block;
+        }
+
+        .login-bar input {
+            padding: 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        .login-bar button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .login-bar button:hover {
+            background-color: #1e8bff;
+        }
+        #entrar-button {
+            padding: 10px 20px;
+            background-color: rgb(71, 214, 71);
+            border: none;
+            border-radius: 5px;
+            color: whitesmoke;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        #entrar-button:hover {
+            background-color: rgb(17, 223, 17);
+        }
     </style>
 </head>
 <body>
     <div id="top-bar">
+        <!-- Conteúdo da top-bar -->
         <div id="imagem-holl"><img src="imagens/logo.png" alt="a" class="imagem-pequena-JVN"></div>
         <h2 class="with">Juventude em Aliança</h2>
         <div class="imagem-holl">
@@ -54,6 +103,15 @@
         </nav>
     </div>
 
+    <div class="login-bar" id="login-bar">
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Nome de Usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="submit" id="entrar-button">Entrar</button>
+            <button type="button" onclick="register()">Cadastrar-se</button>
+        </form>
+    </div>
+
     <div class="container-cor">
         <section class="section-transparence">
             <h1>Sobre Nós:</h1>
@@ -73,6 +131,7 @@
             <p>Caso esteja com alguma dúvida ou queira falar com os líderes você pode falar com <a href="https://wa.me/22988356739" class="link-lideranca" target="_blank">Deyvison</a> ou <a href="https://wa.me/22988612661" class="link-lideranca" target="_blank">Rosy</a></p>
         </section>
     </div>
+
     <footer>
         <p>&copy;Site criado por: Gabriel Asafe de Oliveira Silva</p>
         <p><a href="https://hallstackstudios.github.io/portfolio/" id="link-footer" target="_blank">Acesse meu portifolio online</a></p>
