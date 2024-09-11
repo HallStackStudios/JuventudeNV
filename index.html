@@ -163,24 +163,25 @@
                 <li class="mud-cor-sec"><a href="estudolivro.html" class="link-origin">Estudos (Livros)</a></li>
                 <li class="mud-cor-sec"><a href="calver.html" class="link-origin">Calendário & Versículos</a></li>
             </ul>
-        </nav>         
+        </nav>            
 
 
-        <!-- Ícone de WhatsApp e nome do usuário -->
+        <!--
+        
         <div class="user-info" id="user-info">
             <img src="imagens/icone-what.png" alt="WhatsApp" class="box-img-what">
             <span id="username-display" style="color: black;font-weight: bold;font-size: 20px;">User</span>
-        </div>
+        </div>-->
     </div>
 
-    <div class="login-bar" id="login-bar">
+    <!--<div class="login-bar" id="login-bar">
         <form id="login-form">
             <input type="text" id="username" placeholder="Nome de Usuário" required>
             <input type="password" id="password" placeholder="Senha" required>
             <button type="submit" id="entrar-button">Entrar</button>
             <button type="button" onclick="register()">Cadastrar-se</button>
         </form>
-    </div>
+    </div>-->
 
     <div class="container-cor">
         <section class="section-transparence">
@@ -211,6 +212,8 @@
         <p>&copy;Site criado por: Gabriel Asafe de Oliveira Silva</p>
         <p><a href="https://hallstackstudios.github.io/portfolio/" id="link-footer" target="_blank">Acesse meu portifolio online</a></p>
     </footer>
+    <script src="script.js"></script>
+    <!--
     <script>
         document.addEventListener("DOMContentLoaded", function() {
     const loginBar = document.getElementById('login-bar');
@@ -247,11 +250,11 @@
     // Função de login
     document.getElementById('login-form').addEventListener('submit', function(event) {
         event.preventDefault();
-        const username = document.getElementById('username').value.toUpperCase(); // Nome em maiúsculas
+        const username = getElementById('username').value.toUpperCase(); // Nome em maiúsculas
         const password = document.getElementById('password').value;
 
         // Verificação simples (pode ser substituída por uma validação mais robusta)
-        if (username === "USUARIO" && password === "SENHA123") {
+        if (username === "ASAFE" && password === "#2103Meir!") {
             localStorage.setItem('loggedIn', 'true');
             localStorage.setItem('loggedUser', username);
             loginBar.classList.remove('active');
@@ -271,6 +274,8 @@
     window.closeMessageBox = closeMessageBox;
 });
 
+        window.alert("Página passando por modificações")
     </script>
+    -->
 </body>
 </html>
