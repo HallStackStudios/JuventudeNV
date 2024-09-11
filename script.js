@@ -61,14 +61,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Chama a função para exibir o top-bar após um pequeno atraso
     setTimeout(showTopBar, 500); // Ajuste o tempo de atraso conforme necessário
 });
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function() {
     const loginBar = document.getElementById('login-bar');
 
-    // Verifica se o usuário está logado
-    const isLoggedIn = localStorage.getItem('loggedIn');
-
-    if (!isLoggedIn) {
-        // Se não estiver logado, exibe a barra de login
+    // Exibe a barra de login se o usuário não estiver logado
+    const loggedInUser = localStorage.getItem('loggedInUser');
+    if (!loggedInUser) {
         loginBar.classList.add('active');
     }
 
@@ -78,18 +76,38 @@ document.addEventListener("DOMContentLoaded", function() {
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
 
-        // Verificação simples (pode ser substituída por uma validação mais robusta)
-        if (username === "usuario" && password === "senha123") {
-            localStorage.setItem('loggedIn', 'true');
-            loginBar.classList.remove('active');
-            alert('Login bem-sucedido!');
+        // Verifica se o usuário existe no localStorage
+        const storedUser = localStorage.getItem(username);
+
+        if (storedUser) {
+            const userData = JSON.parse(storedUser);
+            if (userData.password === password) {
+                localStorage.setItem('loggedInUser', username);
+                loginBar.classList.remove('active');
+                alert(`Bem-vindo, ${username}!`);
+            } else {
+                alert('Senha incorreta.');
+            }
         } else {
-            alert('Nome de usuário ou senha incorretos.');
+            alert('Usuário não encontrado.');
         }
     });
 
-    // Função de registro (simulada)
-    function register() {
-        alert('Função de cadastro ainda não implementada.');
-    }
+    // Função de registro
+    window.register = function() {
+        const username = prompt('Digite seu primeiro nome:');
+        const password = prompt('Digite uma senha:');
+        
+        // Verifica se o usuário já existe
+        if (localStorage.getItem(username)) {
+            alert('Usuário já existe. Tente outro nome de usuário.');
+        } else {
+            const userData = {
+                username: username,
+                password: password
+            };
+            localStorage.setItem(username, JSON.stringify(userData));
+            alert('Usuário cadastrado com sucesso!');
+        }
+    };
 });
