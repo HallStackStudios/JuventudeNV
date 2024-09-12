@@ -346,7 +346,7 @@ footer {
         height: 100%;
     }
     footer {
-        height: 150px;
+        height: 130px;
         position: relative;
         font-size: 25px;
         top: 100%;
@@ -354,7 +354,7 @@ footer {
     }
     .section-transparence {
         height: 100%;
-        font-size: 28px;
+        font-size: 26px;
         max-width: 1200px;
     }
     #caixa-calendario {
