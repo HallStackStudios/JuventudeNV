@@ -126,7 +126,22 @@ body {
     font-weight: bold;
     transition: all 0.3s ease;
 }
-
+.box-ancora-retorn {
+    display: block;
+    float: left;
+    max-width: 200px;
+    margin: 0;
+}
+.mavie {
+    display: block;
+}
+.h1-mavie-box {
+    text-align: center;
+}
+.breaking {
+    width: 100%;
+    margin-top: 80px;
+}
 .dropdown-menu a:hover {
     background-color: rgba(0, 0, 0, 0.719);
     color: whitesmoke;
