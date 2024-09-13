@@ -14,6 +14,21 @@
             width: 100%;
             height: 0;
         }
+        #close-info-box {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+            border: none;
+            background-color: rgb(69, 171, 255);
+            border-radius: 10px;
+            padding: 10px;
+            transition: all 0.3s;
+            text-align: center;
+            min-width: 100px;
+        }
+        #close-info-box:hover {
+            background-color: rgb(30, 154, 255);
+        }
         .number {
             display: block;
             font-size: 20px;
@@ -235,15 +250,17 @@ border: 2px solid black;
         infoBox.className = 'info-box';
         infoBox.style.position = 'fixed';
         infoBox.style.backgroundColor = 'white';
-        infoBox.style.border = '1px solid black';
+        infoBox.style.border = '2px solid rgb(69, 171, 255)';
+        infoBox.style.borderRadius = '10px';
         infoBox.style.padding = '20px';
         infoBox.style.zIndex = '1000';
         infoBox.style.top = '50%';
         infoBox.style.left = '50%';
         infoBox.style.transform = 'translate(-50%, -50%)';
+        infoBox.style.transition = 'all 0.3s';
 
         infoBox.innerHTML = `
-            <h3>Informações para ${day} de ${month}</h3>
+            <h3>Informações para: ${day} de ${month}</h3>
             <p>${eventInfo}</p>
             <button id="close-info-box">Fechar</button>
         `;
