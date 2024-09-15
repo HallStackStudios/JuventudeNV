@@ -246,7 +246,6 @@ main {
     border-radius: 13px;
     font-size: 20px;
     margin-bottom: 50px;
-    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.685);
 }
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
     main {
