@@ -245,9 +245,12 @@ width: 100%
             <span id="username-display" style="color: black;font-weight: bold;font-size: 20px;">User</span>
         </div>-->
     </div>
+    <div style="text-align: center; margin-top: 120px; margin-bottom: 50px;">
+        <input type="text" id="search-bar" placeholder="Pesquisar estudos..." class="input-pesquisar">
+    </div>
 
     <!-- Container para os materiais -->
-        <div id="material-recente" style="margin-top: 130px;" class="material">
+        <div id="material-recente" class="material">
             <h1 id="h1-recente">Estudos de Livros Recentes</h1>
             <div class="materials-container">
                 <div class="box-material">
@@ -283,5 +286,20 @@ width: 100%
     </div>
 </div>
     <script src="script.js"></script>
+    <script>
+        document.getElementById('search-bar').addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            const materials = document.querySelectorAll('.box-material');
+
+            materials.forEach(function(material) {
+                const title = material.querySelector('h1').textContent.toLowerCase();
+                if (title.includes(query)) {
+                    material.style.display = 'block';
+                } else {
+                    material.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>

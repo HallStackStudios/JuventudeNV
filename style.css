@@ -5,6 +5,18 @@ body {
     flex-direction: column;
     height: 100%;
 }
+.input-pesquisar {
+    width: 92%;
+    padding: 20px;
+    height: 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 22.5px;
+    transition: all 0.5s;
+}
+.input-pesquisar:hover {
+    border-radius: 50px;
+}
 #d-link a {
     color: #3691c9;
     text-decoration: none;
