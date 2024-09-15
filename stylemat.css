@@ -146,7 +146,9 @@ body {
     background-color: rgba(0, 0, 0, 0.719);
     color: whitesmoke;
 }
-
+blockquote {
+    font-style: italic;
+}
 #imagem-menu {
     display: block;
     float: left;
@@ -157,6 +159,15 @@ body {
     height: 43px;
     cursor: pointer;
     transition: transform 0.3s ease;
+}
+.div-img-conteudo {
+    width: 98%;
+    height: 100%;
+    margin: auto;
+}
+.img-conteudo {
+    width: 100%;
+    height: 100%;
 }
 #imagem-menu {
             display: inline-block;
