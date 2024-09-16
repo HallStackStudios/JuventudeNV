@@ -204,6 +204,31 @@ abbr {
     background-color: rgb(0, 0, 0);
     margin-top: 90px;
 }
+.filtro-box {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 0;
+}
+.button-filtro {
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding: 20px;
+    margin-left: 20px;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 30px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.button-filtro:hover {
+    background-color: black;
+    color: whitesmoke;
+    border: 2px solid black;
+}
 .section-transparence {
     background-color: rgba(0, 0, 0, 0.815);
     color: whitesmoke;
