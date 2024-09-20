@@ -109,7 +109,6 @@ abbr {
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.699);
     opacity: 0;
     transform: translateY(-100%);
-    transition: transform 1s ease, opacity 1s ease;
 }
 #top-bar.visible2 {
     transform: translateY(0);
