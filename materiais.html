@@ -120,7 +120,7 @@
         }
         @media screen and (max-width: 550px) {
             #material-recente {
-                width: 90%;
+                width: 95%;
             }
             #h1-recente {
                 font-size: 27px;
@@ -182,7 +182,11 @@
         margin-top: 30px;
     }
 }
-
+@media screen and (max-width: 600px) {
+    .button-filtro {
+        min-height: 94px;
+    }
+}
     </style>
 </head>
 <body>
@@ -227,7 +231,7 @@
     
     <div class="filtro-box">
         <div class="filtro">
-            <a href="materiais.html"><button class="button-filtro">Estudos Bíblicos</button></a>
+            <a href="materiais.html"><button class="button-filtro" id="min-button-responsive">Estudos Bíblicos</button></a>
         </div>
         <div class="filtro">
             <a href="dsp.html"><button class="button-filtro" id="direita-button-flask">Disciplinas Espirituais</button></a>
@@ -239,22 +243,22 @@
             <div class="materials-container">
                 <div class="box-material">
                     <div class="div-imagem-material">
-                        <img src="mt2/artePentateuco.jpg" alt="a" class="imagem-material">
-                    </div>
-                    <h1 class="letras-recente">Pentateuco</h1>
-                    <a href="mt2/index.html" class="reflex-link-material">Leia Mais</a>
-                </div>
-                <div class="box-material">
-                    <div class="div-imagem-material">
                         <img src="mt3/artealianca.jpg" alt="a" class="imagem-material">
                     </div>
                     <h1 class="letras-recente">O símbolo da aliança</h1>
                     <a href="mt3/index.html" class="reflex-link-material">Leia Mais</a>
                 </div>
+                <div class="box-material">
+                    <div class="div-imagem-material">
+                        <img src="mt2/artePentateuco.jpg" alt="a" class="imagem-material">
+                    </div>
+                    <h1 class="letras-recente">Pentateuco</h1>
+                    <a href="mt2/index.html" class="reflex-link-material">Leia Mais</a>
+                </div>
             </div>
         </div>
 
-<div id="material-antigo" style="margin-top: 30px;" class="material">
+<div id="material-antigo" class="material">
     <div class="materials-container antigos-container">
         <div class="box-material">
             <div class="div-imagem-material">
