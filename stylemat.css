@@ -13,7 +13,7 @@ body {
     background-color: #fae078e1;
     color: skyblue;
     font-weight: bold;
-    position: fixed;
+    position: absolute;
     text-align: center;
     line-height: 60px;
     z-index: 1000; 
