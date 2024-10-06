@@ -204,15 +204,18 @@
 }
 @media screen and (max-width: 600px) {
     .button-filtro {
-        min-height: 94px;
+        margin-right: 0;
     }
+}
+.dropdown-menu {
+    top: 155px;
 }
     </style>
 </head>
 <body>
     <div id="top-bar" class="none-efect">
-        <div id="imagem-holl"><img src="imagens/logo.png" alt="a" class="imagem-pequena-JVN"></div>
-        <h2 class="with">Juventude em Aliança</h2>
+        <div id="imagem-holl"><img src="imagens/logo2.png" alt="a" class="imagem-pequena-JVN"></div>
+        <input type="text" id="search-bar" placeholder="Pesquisar estudos..." class="input-pesquisar-cell">
         <div class="imagem-holl">
             <img src="imagens/iconemenu.png" alt="Menu" id="imagem-menu">
             <div class="dropdown-menu">
@@ -235,30 +238,21 @@
                 <li class="mud-cor-sec"><a href="estudolivro.html" class="link-origin"><i class="fa-solid fa-book"></i>   Estudos (Livros)</a></li>
                 <li class="mud-cor-sec"><a href="calver.html" class="link-origin"><i class="fa-solid fa-calendar-days"></i>   Calendário & Versículos</a></li>
             </ul>
+            <input type="text" id="search-bar" placeholder="Pesquisar estudos..." class="input-pesquisar">
         </nav>            
-
-
-        <!--
-        
-        <div class="user-info" id="user-info">
-            <img src="imagens/icone-what.png" alt="WhatsApp" class="box-img-what">
-            <span id="username-display" style="color: black;font-weight: bold;font-size: 20px;">User</span>
-        </div>-->
     </div>
-    <div style="text-align: center; margin-top: 120px; margin-bottom: 50px;">
-        <input type="text" id="search-bar" placeholder="Pesquisar estudos..." class="input-pesquisar">
-    </div>
-    
-    <div class="filtro-box">
-        <div class="filtro">
-            <a href="materiais.html"><button class="button-filtro">Estudos Bíblicos</button></a>
-        </div>
-        <div class="filtro">
-            <a href="dsp.html"><button class="button-filtro" id="direita-button-flask">Disciplinas Espirituais</button></a>
+    <div class="slin-bar">
+        <div class="filtro-box">
+            <div class="filtro">
+                <a href="materiais.html"><button class="button-filtro">Estudos Bíblicos</button></a>
+            </div>
+            <div class="filtro">
+                <a href="dsp.html"><button class="button-filtro" id="direita-button-flask">Disciplinas Espirituais</button></a>
+            </div>
         </div>
     </div>
     <!-- Container para os materiais -->
-        <div id="material-recente">
+        <div id="material-recente" style="margin-top: 180px;">
             <h1 id="h1-recente">Disciplinas Espirituais</h1>
             <div class="materials-container">
                 <div class="box-material">
