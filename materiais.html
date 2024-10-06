@@ -107,11 +107,11 @@
             width: 100%;
             text-align: center;
             background-color: rgba(245, 245, 245, 0.986);
-            border-radius: 13px;
             margin: auto;
             width: 95%;
             margin-bottom: 50px;
-            border: 2px solid black;
+            border: 2px solid rgba(0, 0, 0, 0.452);
+            border-radius: 2px;
         }
         #h1-recente {
             color: black;
@@ -141,7 +141,6 @@
 #material-recente {
     text-align: center;
     background-color: rgba(245, 245, 245, 0.986);
-    border-radius: 13px;
     margin: auto;
     margin-bottom: 50px;
     opacity: 0; /* Inicialmente invisível */
@@ -152,9 +151,10 @@
     width: 95%;
     text-align: center;
     background-color: rgba(245, 245, 245, 0.986);
-    border-radius: 13px;
+    border-radius: 2px;
     margin: auto;
     margin-bottom: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.425);
 }
 #h1-antigo {
     color: black;
@@ -238,7 +238,7 @@
         </div>
     </div>
     <!-- Container para os materiais -->
-        <div id="material-recente">
+        <div id="material-recente" class="material">
             <h1 id="h1-recente">Estudos Bíblicos Recentes</h1>
             <div class="materials-container">
                 <div class="box-material">
