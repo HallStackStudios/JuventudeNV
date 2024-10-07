@@ -23,6 +23,7 @@
             margin: 10px 0; /* Adiciona espaçamento entre os itens */
             transition: all 0.2s ease-in-out;
             box-sizing: border-box; /* Inclui o padding e border no tamanho total */
+            text-align: left;
         }
 
         .div-imagem-material {
@@ -50,28 +51,7 @@
         }
 
         
-        .reflex-link-material {
-            display: block;
-            float: left;
-            
-            width: 100px;
-            text-align: center;
-            font-size: 18px;
-            border: 2px solid black;
-            padding: 15px;
-            border-top-left-radius: 1px;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
-            border-bottom-left-radius: 10px;
-            text-decoration: none;
-            transition: all 0.3s;
-            background-color: whitesmoke;
-            color: black;
-        }
-        .reflex-link-material:hover {
-            background-color: black;
-            color: whitesmoke;
-        }
+        
         .letras {
             color: whitesmoke;
             padding: 10px;
@@ -80,14 +60,6 @@
             background-color: black;
             border-radius: 15px;
             text-align: center;
-        }
-        .letras-recente {
-            color: black;
-            padding: 10px;
-            border: 1.5px solid black;
-            font-size: 22px;
-            background-color: whitesmoke;
-            border-radius: 15px;
         }
         @media screen and (max-width: 550px) {
             .materials-container {
@@ -102,19 +74,6 @@
             .imagem-material {
                 height: 100%;
             }
-        }
-        #material-recente {
-            text-align: center;
-            margin: auto;
-            width: 95%;
-            margin-bottom: 50px;
-            border: 2px solid rgba(0, 0, 0, 0.452);
-            border-radius: 2px;
-        }
-        #h1-recente {
-            color: black;
-            font-weight: bold;
-            font-size: 38px;
         }
         @media screen and (max-width: 550px) {
             #material-recente {
@@ -137,22 +96,22 @@
 }
 
 #material-recente {
-    text-align: center;
-    background-color: rgba(245, 245, 245, 0.986);
-    margin: auto;
     margin-bottom: 50px;
     opacity: 0; /* Inicialmente invisível */
     animation: slideDown 0.5s ease forwards; /* Animação aplicada */
+    text-align: left;
+            margin: auto;
+            width: 99.8%;
+            border-radius: 2px;
+            background-color: #041921;
+            border: none;
 }
 /* Estilo específico para o contêiner de materiais antigos */
 #material-antigo {
-    width: 95%;
-    text-align: center;
-    background-color: rgba(245, 245, 245, 0.986);
-    border-radius: 2px;
+    width: 99.9%;
+    background-color: #DAE3E5;
+    margin-top: 0;
     margin: auto;
-    margin-bottom: 50px;
-    border: 2px solid rgba(0, 0, 0, 0.425);
 }
 #h1-antigo {
     color: black;
@@ -191,8 +150,9 @@
     </style>
 </head>
 <body>
+    <!--#041921-->
     <div id="top-bar">
-        <div id="imagem-holl"><img src="imagens/logo2.png" alt="a" class="imagem-pequena-JVN"></div>
+        <div id="imagem-holl"><img src="imagens/logo2cinzer.svg" alt="a" class="imagem-pequena-JVN"></div>
         <div class="with"><input type="text" id="search-bar" placeholder="Buscar..." class="input-pesquisar-cell"></div>
         <div class="imagem-holl">
             <img src="imagens/iconemenu.png" alt="Menu" id="imagem-menu">
@@ -230,34 +190,34 @@
         </div>
     </div>
     <!-- Container para os materiais -->
-        <div id="material-recente" class="material" style="margin-top: 180px;">
-            <h1 id="h1-recente">Estudos Bíblicos Recentes</h1>
+        <div id="material-recente" class="material" style="margin-top: 152px;">
+            <h1 id="h1-recente">ESTUDOS BÍBLICOS RECENTES</h1>
             <div class="materials-container">
                 <div class="box-material">
                     <div class="div-imagem-material">
-                        <img src="mt3/artealianca.jpg" alt="a" class="imagem-material">
+                        <!--<img src="mt3/artealianca.jpg" alt="a" class="imagem-material">-->
                     </div>
-                    <h1 class="letras-recente">O símbolo da aliança</h1>
-                    <a href="mt3/index.html" class="reflex-link-material">Leia Mais</a>
+                    <h1 class="letras-recente">O SÍMBOLO DA ALIANÇA</h1>
+                    <a href="mt3/index.html" class="reflex-link-material">LEIA MAIS</a>
                 </div>
                 <div class="box-material">
                     <div class="div-imagem-material">
-                        <img src="mt2/artePentateuco.jpg" alt="a" class="imagem-material">
+                        <!--<img src="mt2/artePentateuco.jpg" alt="a" class="imagem-material">-->
                     </div>
-                    <h1 class="letras-recente">Pentateuco</h1>
-                    <a href="mt2/index.html" class="reflex-link-material">Leia Mais</a>
+                    <h1 class="letras-recente">PENTATEUCO</h1>
+                    <a href="mt2/index.html" class="reflex-link-material">LEIA MAIS</a>
                 </div>
             </div>
         </div>
 
 <div id="material-antigo" class="material">
     <div class="materials-container antigos-container">
-        <div class="box-material">
+        <div class="box-material" id="material-float">
             <div class="div-imagem-material">
-                <img src="mt1/Sem nome (1920 x 1080 px) (1920 x 800 px).jpg" alt="a" class="imagem-material">
+                <!--<img src="mt1/Sem nome (1920 x 1080 px) (1920 x 800 px).jpg" alt="a" class="imagem-material">-->
             </div>
-            <h1 class="letras-recente">Caminhando pela Fé</h1>
-            <a href="mt1/index.html" class="reflex-link-material">Leia Mais</a>
+            <h1 class="letras-antigo" style="color: #65657D;">CAMINHANDO PELA FÉ</h1>
+            <a href="mt1/index.html" class="reflex-link-material" style="color: #65657D;">LEIA MAIS</a>
         </div>
     </div>
 </div>

@@ -14,11 +14,14 @@ body {
     height: 5px;
     border-radius: 30px;
     font-size: 19px;
-    transition: all 0.5s;
+    transition: all 0.2s;
     margin-top: 3px;
+    border: none;
+    background-color: #A1C6EA;
+    border: 2px solid #507DBC;
 }
 .input-pesquisar:hover {
-    border-radius: 50px;
+    box-shadow: 1px 2px 5px #507dbca9;
 }
 .input-pesquisar-cell {
     width: 43%;
@@ -27,11 +30,14 @@ body {
     height: 5px;
     border-radius: 30px;
     font-size: 17px;
-    transition: all 0.5s;
+    transition: all 0.2s;
     margin-top: 20px;
+    border: none;
+    background-color: #A1C6EA;
+    border: 2px solid #507DBC;
 }
 .input-pesquisar-cell:hover {
-    border-radius: 50px;
+    box-shadow: 1px 2px 5px #507dbca9;
 }
 @media screen and (max-width: 600px) {
     .input-pesquisar {
@@ -114,8 +120,7 @@ abbr {
 #top-bar {
     width: 100%;
     height: 90px; 
-    background-color: black ;
-    color: skyblue;
+    background-color: white;
     font-weight: bold;
     position: absolute;
     text-align: center;
@@ -145,21 +150,21 @@ abbr {
     float: left;
 }
 .link-origin {
-    color: whitesmoke;
+    color: #65657D;
     text-decoration: none;
     font-weight: bold;
     font-size: 17px;
     width: 0px;
     padding: 10px;
     height: 0px;
-    border: 2px solid black;
-    border-radius: 10px;
+    border: 2px solid white;
+    border-radius: 25px;
     transition: all 0.4s;
     margin-left: 5px;
     padding: 10px;
 }
 .link-origin:hover {
-    border: 2px solid rgba(245, 245, 245, 0.644);
+    border: 2px solid #A1C6EA;
     cursor: pointer;
 }
 #with-nord {
@@ -216,13 +221,8 @@ abbr {
     font-size: 20px;
 }
 .container-cor {
-    background-image: url('imagens/fogo-pequeno.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
-    background-color: rgb(0, 0, 0);
-    margin-top: 90px;
+    background-color: whitesmoke;
 }
 .filtro-box {
     display: flex;
@@ -237,24 +237,25 @@ abbr {
     padding: 10px;
     background-color: whitesmoke;
     border-radius: 30px;
-    border: 2px solid black;
+    border: 2px solid #BBD1EA;
     margin-right: 10px;
     height: 45px;
     transition: all 0.2s;
     cursor: pointer;
     font-size: 15px;
     font-weight: normal;
+    color: #65657D;
 }
 .button-filtro:hover {
-    border: 2px solid #A3EEFF;
+    border: 2px solid #A1C6EA;
 }
 .slin-bar {
     width: 100%;
     height: 60px; 
     margin-top: 90px;
-    border-top: 1px solid whitesmoke;
-    background-color: black;
+    background-color: #F1F1F1;
     font-weight: bold;
+    border-bottom: 2px solid #17A1D2;
     position: absolute;
     text-align: center;
     line-height: 60px;
@@ -276,27 +277,13 @@ abbr {
         margin-left: 20px;
     }
 }
-.section-transparence {
-    background-color: rgba(0, 0, 0, 0.815);
-    color: whitesmoke;
-    font-size: 17px;
-    padding: 15px;
-    width: 80%;
-    margin: auto;
-    border-radius: 15px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    flex-wrap: wrap;
-    opacity: 0; 
-    animation: slideDown 0.5s ease forwards; 
-    border: 2px solid rgba(245, 245, 245, 0.788);
-}
+
 footer {
     margin: auto;
     text-align: center;
-    color: black;
+    color: whitesmoke;
     width: 100%;
-    background-color: rgba(245, 245, 245, 0.836);
+    background-color: black;
 }
 #link-footer {
     color: black;
@@ -306,6 +293,7 @@ footer {
     text-decoration: none;
     font-weight: bold;
     background-color: black;
+    margin: 10px;
     transition: 0.3s;
     padding: 10px;
     text-align: center;
@@ -314,9 +302,8 @@ footer {
     border: 2px solid rgba(245, 245, 245, 0.836);
 }
 #link-footer:hover {
-    color: black;
-    background-color: whitesmoke;
-    border: 2px solid black;
+    border: 2px solid #A1C6EA;
+    color: #A1C6EA;
 }
 .link-contatos {
     text-decoration: none;
@@ -336,7 +323,7 @@ footer {
 }
 .link-lideranca {
     text-decoration: none;
-    color: #a3eeff;
+    color: #507DBC;
     font-weight: bold;
     transition: all 0.3s ease;
 }
@@ -373,9 +360,10 @@ footer {
     position: fixed;
     top: 80px;
     right: 5px;
-    background-color: black;
+    background-color: white;
     padding: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 1px solid #04080F;
     z-index: 1;
     opacity: 0;
     border-radius: 5px;
@@ -390,15 +378,14 @@ footer {
     text-decoration: none;
     display: block;
     border-radius: 5px;
-    color: whitesmoke;
-    border: 2px solid black;
+    color: #65657D;
+    border: 2px solid white;
     font-weight: bold;
     transition: all 0.3s ease;
 }
 
 .dropdown-menu a:hover {
-    background-color: rgba(0, 0, 0, 0.644);
-    border: 2px solid whitesmoke;
+    border: 2px solid #A1C6EA;
 }
 #imagem-menu {
     display: block;
@@ -522,6 +509,63 @@ footer {
         min-height: 450px;
     }
 }
-.material {
-    border: 2px solid black;
+.letras-recente {
+    color: #EFFFFF;
+    font-size: 20px;
+    background-color: none;
+    font-weight: normal;
+}
+.letras-antigo {
+    color: #65657D;
+    font-size: 20px;
+    background-color: none;
+    font-weight: normal;
+}
+.reflex-link-material {
+    display: block;
+    float: left;
+    width: 100px;
+    text-align: center;
+    font-size: 15px;
+    border: 2px solid #17A1D2;
+    padding: 15px;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s;
+    background-color: none;
+    color: #EFFFFF;
+    font-weight: normal;
+}
+.reflex-link-material:hover {
+    box-shadow: 1px 2px 5px #efffff6b;
+}
+#h1-recente {
+    color: #FFFFFF;
+    text-align: left;
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: normal;
+}
+@media screen and (max-width: 600px) {
+    #h1-recente {
+        display: block;
+        text-align: center;
+        margin-left: 0;
+    }
+}
+.section-transparence {
+    background-color: whitesmoke;
+    font-size: 17px;
+    padding: 15px;
+    width: 90%;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    opacity: 0; 
+    animation: slideDown 0.5s ease forwards; 
 }

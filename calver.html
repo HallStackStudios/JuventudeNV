@@ -64,7 +64,7 @@
             transition: all 0.3s;
         }
         .pass-right:hover {
-            background-color: rgb(78, 78, 78);
+            background-color: rgb(121, 121, 121);
         }
         .pass-left {
             display: block;
@@ -82,7 +82,7 @@
             transition: all 0.3s;
         }
         .pass-left:hover {
-            background-color: rgb(78, 78, 78);
+            background-color: rgb(121, 121, 121);
         }
         .info-box {
         position: fixed;
@@ -107,27 +107,32 @@
 }
 
 #caixa-calendario {
-    width: 80%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
     background-color: rgba(245, 245, 245, 0.986);
-    border-radius: 13px;
     margin: auto;
     margin-top: 130px;
     margin-bottom: 50px;
     opacity: 0; /* Inicialmente invisível */
     animation: slideDown 0.5s ease forwards; /* Animação aplicada */
-border: 2px solid black;
+    border-right: 1px solid #04080F;
+    border-left: 1px solid #04080F;
+    border-radius: 30px;
 }
-
+@media screen and (max-width: 600px) {
+    #caixa-calendario {
+        width: 78%;
+    }
+}
     </style>
 </head>
 <body>
-    <div id="top-bar">
-        <div id="imagem-holl"><img src="imagens/logo2.png" alt="a" class="imagem-pequena-JVN"></div>
-        <h2 class="with" id="with-nord" style="color: white;">Juventude em Aliança</h2>
+    <div id="top-bar" style="border: 2px solid #BBD1EA;">
+        <div id="imagem-holl"><img src="imagens/logo2cinzer.svg" alt="a" class="imagem-pequena-JVN"></div>
+        <h2 class="with" id="with-nord" style="color: black;">Juventude em Aliança</h2>
         <div class="imagem-holl">
             <img src="imagens/iconemenu.png" alt="Menu" id="imagem-menu">
             <div class="dropdown-menu">
@@ -162,10 +167,10 @@ border: 2px solid black;
     </div>
 
     <div id="caixa-calendario">
-        <h1>Calendário 2024</h1>
+        <h1 style="font-weight: normal; color: #65657D;">CALENDÁRIO 2024</h1>
         <div class="break"></div>
         <div class="pass-left">&lt;</div>
-        <h2>Janeiro</h2>
+        <h2 style="color: #65657D; font-weight: normal;">JANEIRO</h2>
         <div class="pass-right">&gt;</div>
         <div class="break"></div>
         <p class="number">1</p>
