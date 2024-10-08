@@ -421,15 +421,14 @@ footer {
         height: 100%;
     }
     footer {
-        height: 130px;
-        position: relative;
+        position: absolute;
+        bottom: 0;
         font-size: 25px;
-        top: 100%;
         margin: auto;
     }
     .section-transparence {
         height: 100%;
-        font-size: 26px;
+        font-size: 32px;
         max-width: 1200px;
     }
     #caixa-calendario {
@@ -441,10 +440,10 @@ footer {
         padding-bottom: 37px;
     }
     .div-imagem-material {
-        min-height: 350px;
+        min-height: 300px;
     }
     .imagem-material {
-        min-height: 350px;
+        height: 100%;
     }
 }
 @media screen and (min-width: 1920px) and (max-width: 2560px) {
@@ -452,10 +451,9 @@ footer {
         height: 100%;
     }
     footer {
-        height: 150px;
-        position: relative;
+        position: absolute;
+        bottom: 0;
         font-size: 25px;
-        top: 100%;
         margin: auto;
     }
     .section-transparence {
@@ -472,10 +470,10 @@ footer {
         padding-bottom: 37px;
     }
     .div-imagem-material {
-        min-height: 400px;
+        min-height: 370px;
     }
     .imagem-material {
-        min-height: 400px;
+        height: 100%;
     }
 }
 @media screen and (min-width: 2560px) {
@@ -483,10 +481,9 @@ footer {
         height: 100%;
     }
     footer {
-        height: 150px;
-        position: relative;
+        position: absolute;
+        bottom: 0;
         font-size: 25px;
-        top: 100%;
         margin: auto;
     }
     .section-transparence {
