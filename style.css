@@ -259,7 +259,7 @@ abbr {
     position: absolute;
     text-align: center;
     line-height: 60px;
-    z-index: 1000;
+    z-index: 999;
     transition: transform 1.5s ease, opacity 1s ease;
     opacity: 0;
     transform: translateY(-100%);
@@ -358,16 +358,13 @@ footer {
 .dropdown-menu {
     display: block;
     position: fixed;
-    top: 80px;
-    right: 5px;
+    top: 0px;
+    right: 0px;
     background-color: white;
     padding: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    border: 1px solid #04080F;
     z-index: 1;
     opacity: 0;
-    border-radius: 5px;
-    transform: translateY(-20px);
+    transform: translateX(100px);
     transition: all 0.3s ease;
     visibility: hidden;
     text-align: left;
@@ -377,7 +374,6 @@ footer {
     padding: 8px 12px;
     text-decoration: none;
     display: block;
-    border-radius: 5px;
     color: #65657D;
     border: 2px solid white;
     font-weight: bold;
@@ -398,18 +394,9 @@ footer {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-#imagem-menu {
-            display: inline-block;
-            transition: transform 0.4s ease;
-        }
-        
-        #imagem-menu:hover {
-            transform: rotate(180deg);
-        }
-
 .imagem-holl:hover .dropdown-menu {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
     visibility: visible;
 }
 
