@@ -68,4 +68,3 @@ document.addEventListener("DOMContentLoaded", function () {
     // Chama a função para exibir o top-bar após um pequeno atraso
     setTimeout(showTopBar, 500); // Ajuste o tempo de atraso conforme necessário
 });
-
