@@ -83,7 +83,7 @@ h3 {
     padding: 10px;
     height: 0px;
     border: 2px solid white;
-    border-radius: 25px;
+    border-radius: 20px;
     transition: all 0.4s;
     margin-left: 5px;
     padding: 10px;
@@ -371,14 +371,16 @@ main {
     position: fixed;
     top: 0px;
     right: 0px;
-    background-color: white;
+    background-color: #eaeff0;
     padding: 10px;
     z-index: 1;
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateY(-3%);
     transition: all 0.3s ease;
     visibility: hidden;
     text-align: left;
+    height: 100vh;
+    border-left: 2px solid #04080f;
 }
 
 .dropdown-menu a {
@@ -386,8 +388,9 @@ main {
     text-decoration: none;
     display: block;
     color: #65657D;
-    border: 2px solid white;
+    border: 2px solid #eaeff0;
     font-weight: bold;
+    border-radius: 10px;
     transition: all 0.3s ease;
 }
 
