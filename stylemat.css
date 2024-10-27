@@ -417,3 +417,9 @@ main {
 main {
     background-color: white;
 }
+.conteudo {
+    text-align: justify;
+}
+p {
+    text-align: justify;
+}
