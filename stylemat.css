@@ -34,7 +34,6 @@ h3 {
     opacity: 0;
     transform: translateY(-70%);
     backdrop-filter: blur(15px);
-    border-bottom: 2px solid #04080f;
 }
 .mat {
     margin-top: 20px;
