@@ -369,7 +369,7 @@ footer {
     visibility: hidden;
     text-align: left;
     height: 100vh;
-    border-left: 2px solid #04080f;
+    border-left: 2px solid #04080f67;
 }
 
 .dropdown-menu a {
@@ -402,7 +402,6 @@ footer {
     transform: translateX(0);
     visibility: visible;
 }
-
 .dropdown-item {
     position: relative;
 }
