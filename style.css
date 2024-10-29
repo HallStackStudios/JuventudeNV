@@ -358,33 +358,32 @@ footer {
 .dropdown-menu {
     display: block;
     position: fixed;
-    top: 0px;
-    right: 0px;
-    background-color: #eaeff0;
+    top: 95px;
+    right: 8px;
+    backdrop-filter: blur(40px);
+    border: 1px solid rgba(0, 0, 0, 0.205);
     padding: 10px;
     z-index: 1;
+    border-radius: 30px;
     opacity: 0;
     transform: translateY(-3%);
     transition: all 0.3s ease;
     visibility: hidden;
     text-align: left;
-    height: 100vh;
-    border-left: 2px solid #04080f67;
 }
 
 .dropdown-menu a {
     padding: 8px 12px;
     text-decoration: none;
     display: block;
-    color: #65657D;
-    border: 2px solid #eaeff0;
+    color: black;
     font-weight: bold;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
 
 .dropdown-menu a:hover {
-    border: 2px solid #A1C6EA;
+    box-shadow: 1px 2px 5px #04080f52;
 }
 #imagem-menu {
     display: block;
