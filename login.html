@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #507dbc, #a1c6ea, #dae3e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container principal */
+.container {
+    background: #fff;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.form-container {
+    padding: 20px 30px;
+}
+
+/* Cabeçalho dos botões */
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-header button {
+    flex: 1;
+    padding: 10px 0;
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #666;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.form-header button.active {
+    color: #507dbc;
+    border-color: #507dbc;
+}
+
+/* Formulário */
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #507dbc;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #a1c6ea;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #507dbc;
+}
+
+.form-text {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+}
+
+.form-text a {
+    color: #4e54c8;
+    text-decoration: none;
+}
+
+.form-text a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+#switch-to-login {
+    color: #507dbc;
+}
+h2 {
+    font-weight: normal;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <button id="login-btn" class="active">Login</button>
+                <button id="signup-btn">Cadastro</button>
+            </div>
+            <!-- Formulário de Login -->
+            <form id="login-form" class="form">
+                <h2>Bem-vindo!</h2>
+                <br>
+                <div class="input-group">
+                    <label for="login-username">Nome</label>
+                    <input type="text" id="login-username" placeholder="Digite seu nome" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Senha</label>
+                    <input type="password" id="login-password" placeholder="Digite sua senha" required>
+                </div>
+                <button type="submit" class="btn">Entrar</button>
+            </form>
+            <!-- Formulário de Cadastro -->
+            <form id="signup-form" class="form hidden">
+                <h2>Crie sua conta:</h2>
+                <br>
+                <div class="input-group">
+                    <label for="signup-name">Nome</label>
+                    <input type="text" id="signup-name" placeholder="Digite seu nome" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-password">Senha</label>
+                    <input type="password" id="signup-password" placeholder="Crie uma senha" required>
+                </div>
+                <button type="submit" class="btn">Cadastrar</button>
+                <p class="form-text">Já tem uma conta? <a href="#" id="switch-to-login">Faça login</a></p>
+            </form>
+        </div>
+    </div>
+    <script>
+        const loginForm = document.getElementById('login-form');
+const signupForm = document.getElementById('signup-form');
+const loginBtn = document.getElementById('login-btn');
+const signupBtn = document.getElementById('signup-btn');
+
+loginBtn.addEventListener('click', () => {
+    loginForm.classList.add('active');
+    signupForm.classList.remove('active');
+    loginBtn.classList.add('active');
+    signupBtn.classList.remove('active');
+});
+
+signupBtn.addEventListener('click', () => {
+    signupForm.classList.add('active');
+    loginForm.classList.remove('active');
+    signupBtn.classList.add('active');
+    loginBtn.classList.remove('active');
+});
+
+document.getElementById('switch-to-login').addEventListener('click', (e) => {
+    e.preventDefault();
+    loginBtn.click();
+});
+
+    </script>
+</body>
+</html>
