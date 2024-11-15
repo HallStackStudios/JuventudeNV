@@ -199,6 +199,53 @@
             80% { transform: translateX(-400%); }
             100% { transform: translateX(0); }
         }
+        #div-gif-temp {
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            border: 2px solid #ccc;
+            border-radius: 20px;
+            position: fixed;
+            z-index: 9999;
+            left: 50%;       /* Move o elemento para o centro horizontal */
+            top: 50%;        /* Move o elemento para o centro vertical */
+            transform: translate(-50%, -50%);
+            transition: opacity 0.5s ease;
+        }
+        @media screen and (max-width: 600px) {
+            #div-git-temp {
+                width: 300px;
+                height: 300px;
+            }
+        }
+        .sumir {
+      opacity: 0; /* Faz a div desaparecer */
+    }
+        #div-gif-temp img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+        .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(20px); /* Fundo preto com transparência */
+      z-index: 9999; /* Garante que fique acima de outros elementos */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.5s ease, visibility 0.5s ease; /* Transição suave */
+    }
+
+    .overlay.hidden {
+      opacity: 0; /* Deixa invisível */
+      visibility: hidden; /* Remove do fluxo visual */
+    }
     </style>
 </head>
 <body>
@@ -228,6 +275,11 @@
                     <li class="mud-cor-sec"><a href="calver.html" class="link-origin"><i class="fa-solid fa-calendar-days"></i>   Calendário & Versículos</a></li>
                 </ul>
             </nav>
+        </div>
+        <div id="overlay" class="overlay">
+            <div id="div-gif-temp">
+                <img src="imagens/gif/gitupdate.gif" alt="a">
+            </div>
         </div>
         <div class="banner-container" style="margin-top: 90px;">
             <div class="banner">

@@ -68,3 +68,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Chama a função para exibir o top-bar após um pequeno atraso
     setTimeout(showTopBar, 500); // Ajuste o tempo de atraso conforme necessário
 });
+    // Aguarde 5 segundos antes de aplicar a classe "sumir"
+    setTimeout(() => {
+      const div = document.getElementById("div-gif-temp");
+      div.classList.add("sumir"); // Adiciona a classe que define "opacity: 0"
+    }, 4000);
+    setTimeout(() => {
+        const overlay = document.getElementById("overlay");
+        overlay.classList.add("hidden"); // Adiciona a classe para ocultar
+      }, 4000);
