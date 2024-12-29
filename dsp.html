@@ -164,7 +164,7 @@
                 <li class="mud-cor-sec"><a href="estudolivro.html" class="link-origin"><i class="fa-solid fa-book"></i>   Estudos (Livros)</a></li>
                 <li class="mud-cor-sec"><a href="calver.html" class="link-origin"><i class="fa-solid fa-calendar-days"></i>   Calendário & Versículos</a></li>
             </ul>
-            <input type="text" id="search-bar" placeholder="Buscar..." class="input-pesquisar">
+            <input type="text" id="search-bar-PC" placeholder="Buscar..." class="input-pesquisar">
         </nav>            
     </div>
     <div class="slin-bar">
@@ -185,7 +185,7 @@
                     <div class="div-imagem-material">
                         <img src="dsp1/arteDSP-1.jpg" alt="a" class="imagem-material">
                     </div>
-                    <h1 class="letras-recente">LICÃO - 6</h1>
+                    <h1 class="letras-recente">LIÇÃO - 6</h1>
                     <a href="dsp1/index.html" class="reflex-link-material">LEIA MAIS</a>
                 </div>
                 <!--<div class="box-material">
@@ -229,6 +229,19 @@
     <script src="script.js"></script>
     <script>
         document.getElementById('search-bar').addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            const materials = document.querySelectorAll('.box-material');
+
+            materials.forEach(function(material) {
+                const title = material.querySelector('h1').textContent.toLowerCase();
+                if (title.includes(query)) {
+                    material.style.display = 'block';
+                } else {
+                    material.style.display = 'none';
+                }
+            });
+        });
+        document.getElementById('search-bar-PC').addEventListener('input', function() {
             const query = this.value.toLowerCase();
             const materials = document.querySelectorAll('.box-material');
 
