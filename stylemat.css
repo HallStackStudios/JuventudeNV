@@ -425,3 +425,6 @@ main {
 p {
     text-align: justify;
 }
+.div-imagem-material {
+    border: none;
+}
