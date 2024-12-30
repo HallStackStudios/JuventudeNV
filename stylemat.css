@@ -371,6 +371,7 @@ main {
     top: 95px;
     right: 8px;
     backdrop-filter: blur(40px);
+    background: rgb(255, 255, 255, 0.2);
     border: 1px solid rgba(0, 0, 0, 0.205);
     padding: 10px;
     z-index: 1;
