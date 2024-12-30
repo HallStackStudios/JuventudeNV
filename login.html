@@ -152,13 +152,13 @@ h2 {
                 <br>
                 <div class="input-group">
                     <label for="login-username">Nome</label>
-                    <input type="text" id="login-username" placeholder="Digite seu nome" required>
+                    <input type="text" id="login-username" placeholder="Digite seu nome" oninput="this.value = this.value.toUpperCase();" required>
                 </div>
                 <div class="input-group">
                     <label for="login-password">Senha</label>
-                    <input type="password" id="login-password" placeholder="Digite sua senha" required>
+                    <input type="password" id="login-password" placeholder="Digite sua senha" inputmode="numeric" maxlength="6" pattern="[0-9]*" required>
                 </div>
-                <button type="submit" class="btn">Entrar</button>
+                <button type="submit" class="btn"><a href="index.html" style="text-decoration: none; color: white;">Entrar</a></button>
             </form>
             <!-- Formulário de Cadastro -->
             <form id="signup-form" class="form hidden">
@@ -166,11 +166,11 @@ h2 {
                 <br>
                 <div class="input-group">
                     <label for="signup-name">Nome</label>
-                    <input type="text" id="signup-name" placeholder="Digite seu nome" required>
+                    <input type="text" id="signup-name" placeholder="Digite seu nome" oninput="this.value = this.value.toUpperCase();" required>
                 </div>
                 <div class="input-group">
                     <label for="signup-password">Senha (6 dígitos)</label>
-                    <input type="password" id="signup-password" placeholder="Crie uma senha com 6 dígitos" required>
+                    <input type="password" id="signup-password" placeholder="Crie uma senha somente com números" inputmode="numeric" maxlength="6" pattern="[0-9]*" required>
                 </div>
                 <button type="submit" class="btn">Cadastrar</button>
                 <p class="form-text">Já tem uma conta? <a href="#" id="switch-to-login">Faça login</a></p>
