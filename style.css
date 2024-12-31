@@ -558,3 +558,23 @@ footer {
 .div-imagem-material {
     border: none;
 }
+#rank-box {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    background: linear-gradient(135deg, #a1c6ea9a, #dae3e5);
+}
+#pointer-rank {
+    width: 86%;
+    height: 250px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    font-weight: normal;
+    border-right: 1px solid #65657da9;
+    border-left: 1px solid #65657da9;
+    color: #65657D;
+}
